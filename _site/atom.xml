@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4k4m1m3-Blog</title>
+    <description>Blog personal de 4k4m1m3</description>
+    <link>http://localhost:8000</link>
+    <atom:link href="http://localhost:8000/feed.xml" rel="self" type="application/rss+xml" />
+    <author>
+      <name>4k4m1m3</name>
+      <email>4k4m1m3@gmail.com</email>
+      <uri>https://4k4m1m3.github.io/</uri>
+    </author>
+    
+      <item>
+        <title>Hello World</title>
+        <description>&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*(Este sitio aún está en desarrollo.)*
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;¡Hola y bienvenido! Soy un aprendiz de pentesting, un hacker novato sediento de sabiduría en este mundo digital. Como estudiante autodidacta, me siento inquisitivo y curioso, ansioso por descubrir el poder que yace en los bits y bytes. Considero que soy un padawan de los misteriosos 0 y 1 en esta simulación llamada mundo, donde mi sed de conocimiento me impulsa a aprender y crecer cada día.&lt;/p&gt;
+
+&lt;p&gt;Con solo el ingenio como mi espada y la precaución como mi escudo, me embarco en un viaje emocionante y lleno de retos en el fascinante mundo de la ciberseguridad. Mi objetivo es convertirme en un hacker ético comprometido con la seguridad digital y la protección de la privacidad.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“La ética, la humildad y el conocimiento son la clave para ser un hacker ético”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Sé que el camino no será fácil, pero estoy emocionado por enfrentar desafíos y superar obstáculos. ¡Cada día es una oportunidad para aprender algo nuevo y crecer como profesional!&lt;/p&gt;
+
+&lt;p&gt;Gracias por acompañarme en esta aventura. ¡Espero compartir contigo conocimientos, herramientas y descubrimientos que te inspiren en tu propio camino en la ciberseguridad!&lt;/p&gt;
+
+&lt;p&gt;¡Sígueme en este emocionante viaje!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 01 Aug 2023 00:00:00 -0500</pubDate>
+        <link>http://localhost:8000//Hello-World</link>
+        <link href="http://localhost:8000/Hello-World"/>
+        <guid isPermaLink="true">http://localhost:8000/Hello-World</guid>
+      </item>
+    
+  </channel>
+</rss>
