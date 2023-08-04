@@ -14,7 +14,13 @@
 <loc>http://localhost:8000/comunidad</loc>
 </url>
 <url>
+<loc>http://localhost:8000/contacto</loc>
+</url>
+<url>
 <loc>http://localhost:8000/</loc>
+</url>
+<url>
+<loc>http://localhost:8000/maquinas</loc>
 </url>
 <url>
 <loc>http://localhost:8000/publicaciones</loc>

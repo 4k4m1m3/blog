@@ -17,8 +17,6 @@ body {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
 
-/* General & 'Reset' Stuff */
-
 .container {
   width: 90%;
   max-width: 1000px;
@@ -39,15 +37,9 @@ li {
   line-height: 1.4 ;
 }
 
-/* Header, <header>
-   header   - container
-   h1       - project name
-   h2       - project description
-*/
-
 header {
   background: rgba(0, 0, 0, 0.1);
-  border-bottom: 1px dashed $conifer; //header;
+  border-bottom: 1px dashed $conifer;
   padding: 20px;
   margin: 0 0 40px 0;
 }
@@ -67,7 +59,7 @@ header h1 {
   text-align: center;
   font-weight: bold;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: $conifer;//$header;
+  color: $conifer;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
                0 0 10px rgba(181, 232, 83, 0.1);
@@ -80,9 +72,6 @@ header h2 {
   font-weight: 300;
   color: #666;
 }
-
-/* Main Content
-*/
 
 #main_content {
   width: 100%;
@@ -189,8 +178,6 @@ hr {
   color: #b5e853;
 }
 
-/* Buttons
-*/
 
 .btn {
   display: inline-block;
@@ -226,10 +213,6 @@ hr {
   background: url("../images/blacktocat.png") 0 0 no-repeat;
 }
 
-/* Links
-   a, a:hover, a:visited
-*/
-
 a {
   color: #63c0f5;
   text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
@@ -240,8 +223,6 @@ a:active, a:focus {
   border: none;
   -moz-outline-style: none
 }
-
-/* Clearfix */
 
 .cf:before, .cf:after {
   content:"";
@@ -255,8 +236,6 @@ a:active, a:focus {
 .cf {
   zoom:1;
 }
-
-/* Make footer stick to bottom */
 
 .pagination, footer {
   height: 50px;

@@ -18,3 +18,7 @@ Sé que el camino no será fácil, pero estoy emocionado por enfrentar desafíos
 Gracias por acompañarme en esta aventura. ¡Espero compartir contigo conocimientos, herramientas y descubrimientos que te inspiren en tu propio camino en la ciberseguridad!
 
 ¡Sígueme en este emocionante viaje!
+
+|   |
+|:--|
+|   |

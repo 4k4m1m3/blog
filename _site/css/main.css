@@ -74,7 +74,6 @@ body {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
 
-/* General & 'Reset' Stuff */
 .container {
   width: 90%;
   max-width: 1000px;
@@ -94,11 +93,6 @@ li {
   line-height: 1.4;
 }
 
-/* Header, <header>
-   header   - container
-   h1       - project name
-   h2       - project description
-*/
 header {
   background: rgba(0, 0, 0, 0.1);
   border-bottom: 1px dashed #b5e853;
@@ -133,8 +127,6 @@ header h2 {
   color: #666;
 }
 
-/* Main Content
-*/
 #main_content {
   width: 100%;
   -webkit-font-smoothing: antialiased;
@@ -239,8 +231,6 @@ hr {
   color: #b5e853;
 }
 
-/* Buttons
-*/
 .btn {
   display: inline-block;
   background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.3), rgba(35, 35, 35, 0.3) 50%, rgba(10, 10, 10, 0.3) 50%, rgba(0, 0, 0, 0.3));
@@ -275,9 +265,6 @@ hr {
   background: url("../images/blacktocat.png") 0 0 no-repeat;
 }
 
-/* Links
-   a, a:hover, a:visited
-*/
 a {
   color: #63c0f5;
   text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
@@ -289,7 +276,6 @@ a:active, a:focus {
   -moz-outline-style: none;
 }
 
-/* Clearfix */
 .cf:before, .cf:after {
   content: "";
   display: table;
@@ -303,7 +289,6 @@ a:active, a:focus {
   zoom: 1;
 }
 
-/* Make footer stick to bottom */
 .pagination, footer {
   height: 50px;
   line-height: 50px;

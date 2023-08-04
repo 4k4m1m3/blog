@@ -1,0 +1,71 @@
+---
+layout: page
+title: Contacto
+---
+
+Si deseas comunicarte conmigo, es necesario mantener una comunicación segura y cifrada, para ello te recomiendo enviarme un correo directamente a *`4k4m1m3(arroba)gmail(punto)com`* utilizando mi clave pública. Asegúrate de formatear el mensaje en texto sin formato (plaintext) para evitar posibles vulnerabilidades asociadas con el formato HTML.
+
+Para garantizar la seguridad y confidencialidad de nuestros mensajes, es fundamental utilizar cifrado asimétrico con claves públicas. Por favor, cifra tu mensaje utilizando mi clave pública, que encuentras en esta publicación.
+
+De igual manera, te invito a unirte a la <a href="{{ "/comunidad" | prepend: site.baseurl | replace: '//', '/' }}">comunidad de hacking ético</a> en donde compartimos información relevante sobre tecnología y seguridad informática.
+
+
+```
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+=tDkK
+-----END PGP PUBLIC KEY BLOCK-----
+```
+
+
+
+|   |
+|:--|
+|   |
