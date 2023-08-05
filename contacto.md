@@ -64,6 +64,7 @@ iEnYmSbnLM6FXcBzb7NB5J4rk5vqdguN6jjD8ufCUSev
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
+~~Nota:~~ recuerda envirme tu clave pública si requieres una respuesta al correo.
 
 
 |   |

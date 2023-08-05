@@ -3,11 +3,13 @@ layout: page
 title: Comunidad
 ---
 
-# [](#header-1) Mis redes
+# Mis redes
 
-[Twitch](https://www.twitch.tv/4k4m1m3) > | [Youtube](https://youtube.com/@4k4m1m3) > | [Twitter](https://youtube.com/@4k4m1m3) > | [Kick](https://kick.com/4k4m1m3) > | [Github](https://github.com/4k4m1m3) >
+[Twitch](https://www.twitch.tv/4k4m1m3) > | [Youtube](https://youtube.com/@4k4m1m3) > | [Twitter](https://twitter.com/4k4m1m3) > | [Kick](https://kick.com/4k4m1m3) > | [Github](https://github.com/4k4m1m3) > | [Tiktok](https://www.tiktok.com/@4k4m1m3) >
 
-## [](#header-3) Grupos & Canales (Hermanos) recomendados
+
+
+## Grupos & Canales (hermanos) recomendados
 
 
 | Telegram | Twitch | Youtube | Plataformas CTF |

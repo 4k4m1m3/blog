@@ -17,10 +17,16 @@
 <loc>http://localhost:8000/contacto</loc>
 </url>
 <url>
+<loc>http://localhost:8000/faq</loc>
+</url>
+<url>
 <loc>http://localhost:8000/</loc>
 </url>
 <url>
 <loc>http://localhost:8000/maquinas</loc>
+</url>
+<url>
+<loc>http://localhost:8000/objetivo</loc>
 </url>
 <url>
 <loc>http://localhost:8000/publicaciones</loc>

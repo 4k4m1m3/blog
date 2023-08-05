@@ -1,10 +1,15 @@
 <footer>
-  <a href="{{ "/atom.xml" | prepend: site.baseurl | replace: '//', '/' }}">RSS</a> | 
-  <a href="https://4k4m1m3.github.io/">
     <span>
         <b>{{ site.owner}}</b>
     </span>
     {% capture currentyear %}{{ 'now' | date: "%Y" }}{% endcapture %}
     <span>© {{ currentyear }}</span>
-  </a>
+  | <a href="{{ "/faq" | prepend: site.baseurl | replace: '//', '/' }}">FAQ</a> |
+  <a href="{{ "/atom.xml" | prepend: site.baseurl | replace: '//', '/' }}">RSS</a> 
+  | <a href="{{ "/contacto" | prepend: site.baseurl | replace: '//', '/' }}">Contacto</a>
+  <span>
+    <br/><b>No hay emoción, hay paz > No hay ignorancia, hay conocimiento > No hay pasión, hay serenidad > No hay caos, hay armonía</b>
+  </span>
   </footer>
+
+ 
