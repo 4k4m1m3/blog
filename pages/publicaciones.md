@@ -38,7 +38,6 @@ title: Publicaciones
 </section>
 
 
-
 |   |
 |:--|
 |   |

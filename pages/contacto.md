@@ -7,7 +7,7 @@ Si deseas comunicarte conmigo, es necesario mantener una comunicación segura y 
 
 Para garantizar la seguridad y confidencialidad de nuestros mensajes, es fundamental utilizar cifrado asimétrico con claves públicas. Por favor, cifra tu mensaje utilizando mi clave pública, que encuentras en esta publicación.
 
-De igual manera, te invito a unirte a la <a href="{{ "/comunidad" | prepend: site.baseurl | replace: '//', '/' }}">comunidad de hacking ético</a> en donde compartimos información relevante sobre tecnología y seguridad informática.
+De igual manera, te invito a unirte a la <a href="{{ "/pages/comunidad" | prepend: site.baseurl | replace: '//', '/' }}">comunidad de hacking ético</a> en donde compartimos información relevante sobre tecnología y seguridad informática.
 
 
 ```

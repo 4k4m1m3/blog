@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Acerca de
+title: Objetivo
 ---
 ###### _(Última actualización: 05/08/2023)_
 
@@ -8,7 +8,7 @@ title: Acerca de
 
 > Estoy inmerso en un emocionante proceso de aprendizaje, trabajando arduamente para convertirme en un pentester profesional. 
 
-> A medida que avance en mis <a href="{{ "/objetivo" | prepend: site.baseurl | replace: '//', '/' }}">objetivos</a> iré actualizando este espacio para reflejar mi progreso.
+> A medida que avance en mis <a href="{{ "/pages/objetivo" | prepend: site.baseurl | replace: '//', '/' }}">objetivos</a> iré actualizando este espacio para reflejar mi progreso.
 
 Comprendo que el camino hacia mi meta es largo y desafiante, pero estoy absolutamente decidido a recorrerlo. **¿Mi principal motivación?** A mi edad de 33 años, tengo 10 años de casado y el fruto de ello son dos hermosos pequeños que iluminan mi vida. Mi hijo, de 8 años, ya ha sido una inspiración para mí desde el momento en que llegó a este mundo. Además, estamos emocionados esperando la llegada de una princesa, cuya fecha estimada de nacimiento es entre Octubre y Noviembre de 2023.
 

@@ -6,13 +6,13 @@ title: Apoyo
 
 # ¿Como apoyar con el objetivo?
 
-Actualmente puedes realizar tu apoyo con el [objetivo](objetivo) que me he establecido de diferentes maneras
+Actualmente puedes realizar tu apoyo con el [objetivo](/pages/objetivo) que me he establecido de diferentes maneras
 
 |   |
 |:--|
 |   |
 
-### Apoyando en las redes y participando en la [comunidad](comunidad)
+### Apoyando en las redes y participando en la [comunidad](/pages/comunidad)
 - Participando en los directos, invitando a amigos y comentando.
 - Al suscribirte, darle like, comentar y compartir los videos.
 
