@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>4k4m1m3/blog</title>
+    <title>4k4m1m3 | blog</title>
     <description>Blog personal de 4k4m1m3</description>
     <link>http://localhost:8000</link>
     <atom:link href="http://localhost:8000/feed.xml" rel="self" type="application/rss+xml" />
