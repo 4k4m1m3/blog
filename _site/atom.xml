@@ -12,9 +12,142 @@
     </author>
     
       <item>
-        <title>Hello World</title>
-        <description>&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*(Este sitio aún está en desarrollo.)*
+        <title>Padawan de Hacker</title>
+        <description>&lt;h2 id=&quot;ser-un-padawan-de-hacker&quot;&gt;¿Ser un padawan de hacker?&lt;/h2&gt;
+
+&lt;p&gt;¡Un Padawan es un aprendiz Jedi en el universo de Star Wars! De manera similar, en el mundo del hacking ético, debemos adoptar la filosofía del Padawan en nuestro camino de aprendizaje. ¿Como es eso? Pues veamos:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Encuentra un mentor:&lt;/strong&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Al igual que un Padawan busca a un Maestro Jedi, como hacker ético o pentester, es vital encontrar un mentor experimentado que te guíe y enseñe en el camino de la seguridad informática. Un mentor compartirá su conocimiento y experiencia contigo, acelerando tu crecimiento y desarrollo en este emocionante campo.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Domina los fundamentos:&lt;/strong&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Como Padawan Jedi aprende a manejar el sable de luz y controlar la Fuerza, tú como hacker ético o pentester debes dedicar tiempo a dominar los fundamentos esenciales de la seguridad informática. Aprende sobre redes, sistemas operativos, vulnerabilidades comunes y metodologías de pruebas de penetración.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cultiva la disciplina y la paciencia:&lt;/strong&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Convertirse en un experto en seguridad informática requiere disciplina y paciencia. Al igual que un Padawan debe entrenar constantemente para mejorar sus habilidades, tú debes dedicar tiempo a practicar y profundizar en tus conocimientos en el hacking ético y el pentesting.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Aprende de los errores:&lt;/strong&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;En el camino del hacking, cometer errores es inevitable. Pero, al igual que un Padawan aprende de sus fracasos para mejorar, tú también debes ver los errores como oportunidades de aprendizaje. Analiza tus fallos, comprende las lecciones que te ofrecen y utiliza ese conocimiento para fortalecer tus habilidades.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Muestra respeto y humildad:&lt;/strong&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Un Padawan muestra respeto hacia sus Maestros y compañeros, tú como hacker ético o pentester debes ser respetuoso con tus colegas en la comunidad de hacking ético. Aprende a escuchar a los demás y sé humilde en tu búsqueda de conocimiento.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sé compasivo y ayuda a los demás:&lt;/strong&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;La compasión y el deseo de ayudar a los demás también son valores importantes en el mundo del hacking ético. Comparte tus conocimientos y experiencias con otros aspirantes a hackers, ayudándoles a crecer en su camino de aprendizaje.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;No te rindas:&lt;/strong&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;El camino del hacking ético y el pentesting puede ser desafiante y complejo, pero no te rindas. Al igual que un Padawan nunca abandona su entrenamiento Jedi, mantén la perseverancia y la determinación para alcanzar tus objetivos.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Recuerda que el hacking ético y el pentesting son disciplinas en constante evolución, y siempre estarás aprendiendo y desarrollándote como un auténtico Padawan en este emocionante viaje. ¡Que la Fuerza del conocimiento y la ética te acompañen en tu camino hacia la maestría en la seguridad informática!&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;¡Que la fuerza del hacking ético nos acompañe! :)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Sun, 06 Aug 2023 00:00:00 -0500</pubDate>
+        <link>http://localhost:8000//Padawan-Hacker</link>
+        <link href="http://localhost:8000/Padawan-Hacker"/>
+        <guid isPermaLink="true">http://localhost:8000/Padawan-Hacker</guid>
+      </item>
+    
+      <item>
+        <title>La Fuerza del Anonimato</title>
+        <description>&lt;h2 id=&quot;identidad-secreta-en-el-mundo-de-los-hackers&quot;&gt;Identidad secreta en el mundo de los hackers&lt;/h2&gt;
+
+&lt;p&gt;Cuando Peter Parker descubrió sus nuevos poderes arácnidos, supo que necesitaba más que habilidades sobrehumanas para proteger a sus seres queridos. Así nació Spider-Man, una identidad secreta que lo convertiría en uno de los superhéroes más icónicos de todos los tiempos. Al igual que Spider-Man, otros legendarios guardianes de la justicia, como Batman, Flash y Superman, comprendieron la importancia de ocultar su identidad para luchar por la justicia sin poner en riesgo a sus seres queridos.&lt;/p&gt;
+
+&lt;p&gt;En el mundo del pentesting, los expertos en seguridad informática también entienden el poder del anonimato. Aquí, nuestras identidades reales quedan en las sombras, protegidas por nicks, usernames y avatares. Al igual que los superhéroes necesitan proteger su identidad para combatir el crimen, los pentesters se resguardan detrás de sus nombres de usuario mientras desafían a los cibercriminales en un juego de ingenio y destreza.&lt;/p&gt;
+
+&lt;p&gt;En esta comunidad enigmática, figuras como Kevin Mitnick, el legendario hacker, se escondio tras misteriosos nicks como Cóndor (Condor), The Condor y “El hacker del lado oscuro”. Así como Clark Kent se convierte en Superman, Mitnick encontró su poder en el anonimato, permitiéndole desafiar los límites de la seguridad informática sin exponer su verdadera identidad.&lt;/p&gt;
+
+&lt;p&gt;Es por ello que la elección del nombre de usuario en el mundo del pentesting va más allá de un simple alias. Representa la identidad virtual, la personalidad cibernética que adoptamos para enfrentar los desafíos digitales. Pero, al igual que un superhéroe elige su nombre con sabiduría, también debemos ser cautelosos al seleccionar nuestro nick, aqui algunos puntos a tener presente:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Originalidad:&lt;/strong&gt; Un nombre de usuario único y memorable nos distinguirá entre la multitud, dejando nuestra marca en el vasto mundo del pentesting.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Anonimato y Privacidad:&lt;/strong&gt; Al ocultar nuestra identidad real, protegemos nuestra vida fuera del ciberespacio, manteniendo nuestras acciones virtuales independientes de nuestra existencia cotidiana.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Responsabilidad y Ética:&lt;/strong&gt; Nuestro nombre de usuario también es un reflejo de nuestros valores, asegurémonos por lo tanto de que nuestros actos sean éticos y responsables, en aras de un ciberespacio seguro.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Reputación:&lt;/strong&gt; Como en toda comunidad, nuestro nombre de usuario está vinculado a nuestra reputación, así que debemos mantener una conducta profesional y respetuosa con todos, en especial con nuestros colegas.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;En fin, en el mundo del pentesting, la identidad secreta que adoptamos como nombre de usuario es nuestra máscara virtual, nuestro traje de superhéroe que usamos para enfrentar los retos del ciberespacio. Al igual que nuestros héroes favoritos, canalizamos nuestro poder y creatividad en nuestras identidades secretas para marcar la diferencia y proteger el mundo digital. Así que, elige sabiamente tu nombre de usuario, y que la Fuerza del Anonimato guíe tus pasos en este emocionante viaje por el ciberespacio. ¡Adelante, valientes guardianes del pentesting!&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Guia de como usar ChatGPT para crear un nombre de usuario.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://drive.google.com/file/d/17En4-nk8y9ig7JB65Qbbts7IM-6Ot-be/view&quot;&gt;Crear nick hacker usando ChatGPT&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Sun, 06 Aug 2023 00:00:00 -0500</pubDate>
+        <link>http://localhost:8000//Identidad-Secreta</link>
+        <link href="http://localhost:8000/Identidad-Secreta"/>
+        <guid isPermaLink="true">http://localhost:8000/Identidad-Secreta</guid>
+      </item>
+    
+      <item>
+        <title>Hello World</title>
+        <description>&lt;h2 id=&quot;hola-mundo&quot;&gt;Hola mundo!&lt;/h2&gt;
 
 &lt;p&gt;¡Hola y bienvenido! Soy un aprendiz de pentesting, un hacker novato sediento de sabiduría en este mundo digital. Como estudiante autodidacta, me siento inquisitivo y curioso, ansioso por descubrir el poder que yace en los bits y bytes. Considero que soy un padawan de los misteriosos 0 y 1 en esta simulación llamada mundo, donde mi sed de conocimiento me impulsa a aprender y crecer cada día.&lt;/p&gt;
 
@@ -28,7 +161,7 @@
 
 &lt;p&gt;Gracias por acompañarme en esta aventura. ¡Espero compartir contigo conocimientos, herramientas y descubrimientos que te inspiren en tu propio camino en la ciberseguridad!&lt;/p&gt;
 
-&lt;p&gt;¡Sígueme en este emocionante viaje!&lt;/p&gt;
+&lt;p&gt;¡Sígueme en este emocionante viaje! Y que la fuerza nos acompañe.&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;

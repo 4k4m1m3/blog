@@ -3,9 +3,7 @@ title: Hello World
 published: true
 ---
 
-```
-*(Este sitio aún está en desarrollo.)*
-```
+## Hola mundo!
 
 ¡Hola y bienvenido! Soy un aprendiz de pentesting, un hacker novato sediento de sabiduría en este mundo digital. Como estudiante autodidacta, me siento inquisitivo y curioso, ansioso por descubrir el poder que yace en los bits y bytes. Considero que soy un padawan de los misteriosos 0 y 1 en esta simulación llamada mundo, donde mi sed de conocimiento me impulsa a aprender y crecer cada día.
 
@@ -17,7 +15,7 @@ Sé que el camino no será fácil, pero estoy emocionado por enfrentar desafíos
 
 Gracias por acompañarme en esta aventura. ¡Espero compartir contigo conocimientos, herramientas y descubrimientos que te inspiren en tu propio camino en la ciberseguridad!
 
-¡Sígueme en este emocionante viaje!
+¡Sígueme en este emocionante viaje! Y que la fuerza nos acompañe.
 
 |   |
 |:--|

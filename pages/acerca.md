@@ -23,7 +23,7 @@ Mi deseo es que este sitio se convierta en un faro de inspiración, donde otros 
 Una vez más, gracias por ser parte de esta comunidad de aprendizaje y espero que juntos podamos alcanzar nuevas alturas en el fascinante campo del pentesting.
 
 ```
-¡Que la fuerza nos acompañe! :)
+¡Que la fuerza del hacking ético nos acompañe! :)
 ```
 
 
