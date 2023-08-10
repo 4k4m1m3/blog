@@ -9,7 +9,7 @@ title: Publicaciones
     {% capture currentyear %}{{ 'now' | date: "%Y" }}{% endcapture %}
     {% capture firstpostyear %}{{ site.posts[0].date | date: '%Y' }}{% endcapture %}
     {% if currentyear == firstpostyear %}
-        <h3>Publicaciones de este año</h3>
+        <h3>Publicaciones texto e imagen</h3>
     {% else %}  
         <h3>{{ firstpostyear }}</h3>
     {% endif %}
@@ -36,6 +36,27 @@ title: Publicaciones
 
   {% endif %}
 </section>
+
+
+
+### Publicaciones en video
+
+| [Youtube](https://www.youtube.com/@4k4m1m3) |
+|:--|
+|   |
+
+### Transmisiones en directo
+
+| [Twitch - Kick - Youtube](https://www.youtube.com/@4k4m1m3live) | 
+|:--|
+|   |
+
+### Podcast
+
+| [Youtube](https://www.youtube.com/@4k4m1m3podcast) | 
+|:--|
+|   |
+
 
 
 |   |
