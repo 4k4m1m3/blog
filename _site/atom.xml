@@ -15,7 +15,76 @@
         <title>La nave</title>
         <description>&lt;h2 id=&quot;creando-tu-propia-estrella-de-la-galaxia-en-github&quot;&gt;Creando tu propia estrella de la galaxia en GitHub&lt;/h2&gt;
 
-&lt;p&gt;Editando… (proximamente)&lt;/p&gt;
+&lt;p&gt;En una galaxia muy, muy lejana, donde la lucha entre el bien y el mal se libra en las estrellas, existe una herramienta llamada &lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt;, que permite a los jedis compartir y crear sus propias historias en línea. Vamos a sumergirnos en este universo digital y aprender a crear nuestra propia página de usuario en GitHub, que a su vez actuará como tu propia nave espacial en el vasto espacio de Internet.&lt;/p&gt;
+
+&lt;h3 id=&quot;registro-en-github&quot;&gt;Registro en GitHub&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Activa tus sensores de navegación y dirígete al portal principal de &lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Utiliza tu “hiper-ratón” para ubicar y señalar el botón &lt;strong&gt;“Sign up”&lt;/strong&gt; (Registrarse), situado en la esquina superior derecha de la pantalla.&lt;/li&gt;
+  &lt;li&gt;Completa el formulario de registro con tus credenciales.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Nota: En este punto, asegúrate de emplear el &lt;a href=&quot;Identidad-Secreta&quot;&gt;nombre de usuario&lt;/a&gt; que hemos creado previamente. Además, como recomendación, genera una cuenta de correo electrónico utilizando ese mismo nombre de usuario y úsala en el formulario de registro. Por último, elige una contraseña sólida y segura.&lt;/p&gt;
+
+&lt;p&gt;No olvides verificar tu dirección de correo electrónico para completar el proceso.&lt;/p&gt;
+
+&lt;h3 id=&quot;construcción-de-la-nave-espacial-github-usergithubio&quot;&gt;Construcción de la nave espacial GitHub (user.github.io)&lt;/h3&gt;
+
+&lt;p&gt;Una vez que nos registramos en Github, procedemos a crear nuestra página web, nuestro blog, nuestra nave especial que nos permitirá llegar a todos los rincones del espacio digital, para ello seguimos los siguientes pasos:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Enciende tus sistemas y accede a tu cuenta de GitHub.&lt;/li&gt;
+  &lt;li&gt;Activa el propulsor de “Create” (Crear) al pulsar el botón “+” en la esquina superior derecha.&lt;/li&gt;
+  &lt;li&gt;Selecciona “New repository” (Nuevo repositorio) desde el menú emergente.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Sintoniza el “Repository name” (Nombre del repositorio) y establece el nombre de usuario de tu cuenta de GitHub seguido de “.github.io”.&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;Por ejemplo, si eres un intrépido piloto llamado “3st3bl0gm3gust4”, el nombre de tu repositorio sería “3st3bl0gm3gust4.github.io”.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Deja la sección de descripción en blanco, o agrega un mensaje sobre tu misión espacial en línea.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ajusta los escudos de “Public” (Público) para que tu nave sea visible para todos los seres en esta galaxia digital.&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;Si lo deseas, configura tu hipercomputadora para “Initialize this repository with a README” (Inicializar este repositorio con un README).&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Cuando todo esté en su lugar, pulsa el botón “Create repository” (Crear repositorio) para dar vida a tu nave.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;sintonización-del-generador-de-estilo-espacial-jekyll&quot;&gt;Sintonización del generador de estilo espacial Jekyll&lt;/h3&gt;
+
+&lt;p&gt;En resumen hasta este punto ya tenemos un nombre de usuario creado, un logo, un banner, una cuenta de correo con nuestro nombre de usuario, una cuenta de github y un repositorio, tipo: &lt;strong&gt;usuario.github.io&lt;/strong&gt;, ahora solo procedemos a usar una plantilla para nuestra web.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Adentra tu nave en el corazón del repositorio recién creado.&lt;/li&gt;
+  &lt;li&gt;Enciende los sistemas de comunicación y dirígete a “Settings” (Configuración) en la parte superior del menú.&lt;/li&gt;
+  &lt;li&gt;Navega por el panel de control y selecciona la opción “Pages”.&lt;/li&gt;
+  &lt;li&gt;En la sección “GitHub Pages”, elige la ruta más rápida y selecciona la rama main (o la rama que prefieras) como el combustible de tu página.
+    &lt;blockquote&gt;
+      &lt;p&gt;Esto activará el generador de estilos Jekyll, que será como la fuerza que dará forma a tu página web.&lt;/p&gt;
+    &lt;/blockquote&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;Explora la base de datos de estilos intergalácticos haciendo clic en “Choose a theme” (Elegir un tema). Aquí puedes explorar y elegir entre una constelación de temas Jekyll.&lt;/p&gt;
+    &lt;/blockquote&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;Después de seleccionar tu estrella guía, confirma tu elección y deja que los sistemas se sincronicen.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;el-despegue-de-tu-sitio-espacial&quot;&gt;El despegue de tu sitio espacial:&lt;/h3&gt;
+
+&lt;p&gt;El ordenador de a bordo trabajará incansablemente para traducir tu visión en código galáctico. Puedes monitorear el progreso en la pestaña “GitHub Pages”. Una vez que las estrellas se alineen y la generación esté completa, una señal luminosa te llevará a un enlace que marcará el punto de partida de tu viaje web en la parte superior de la pantalla. Ten en cuenta que puede llevar unos minutos para que tu sitio sea accesible en toda la galaxia, una vez concluido, ya podras visualizar tu sitio con la plantilla seleccionada desde &lt;strong&gt;3st3bl0gm3gust4.github.io&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Y ahora, con tu propio “user.github.io” brillando en el espacio cibernético, puedes personalizar aún más tu nave web, ajustando las configuraciones del tema y editando los archivos proporcionados, creando publicaciones y adaptando según tus necesidades, etc.&lt;/p&gt;
+
+&lt;p&gt;¡Y pues ahora que la fuerza del hacking ético te acompañe!&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
