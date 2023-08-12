@@ -13,78 +13,79 @@
     
       <item>
         <title>La nave</title>
-        <description>&lt;h2 id=&quot;creando-tu-propia-estrella-de-la-galaxia-en-github&quot;&gt;Creando tu propia estrella de la galaxia en GitHub&lt;/h2&gt;
+        <description>&lt;h2 id=&quot;creando-mi-propia-estrella-de-la-galaxia-en-github&quot;&gt;Creando mi propia estrella de la galaxia en GitHub&lt;/h2&gt;
 
-&lt;p&gt;En una galaxia muy, muy lejana, donde la lucha entre el bien y el mal se libra en las estrellas, existe una herramienta llamada &lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt;, que permite a los jedis compartir y crear sus propias historias en línea. Vamos a sumergirnos en este universo digital y aprender a crear nuestra propia página de usuario en GitHub, que a su vez actuará como tu propia nave espacial en el vasto espacio de Internet.&lt;/p&gt;
+&lt;p&gt;En una galaxia muy, muy lejana, donde la lucha entre el bien y el mal se libra en las estrellas, existe una plataforma llamada &lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt;, que permite a los jedis compartir y crear sus propias historias en línea. Por lo tanto voy a sumergirme en este universo digital y aprender a crear mi propia página de usuario en esta plataforma, que a su vez actuará como mi propia nave espacial en el vasto espacio de Internet.&lt;/p&gt;
 
-&lt;h3 id=&quot;registro-en-github&quot;&gt;Registro en GitHub&lt;/h3&gt;
+&lt;h3 id=&quot;registrandome-en-github&quot;&gt;Registrandome en GitHub&lt;/h3&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Activa tus sensores de navegación y dirígete al portal principal de &lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Utiliza tu “hiper-ratón” para ubicar y señalar el botón &lt;strong&gt;“Sign up”&lt;/strong&gt; (Registrarse), situado en la esquina superior derecha de la pantalla.&lt;/li&gt;
-  &lt;li&gt;Completa el formulario de registro con tus credenciales.&lt;/li&gt;
+  &lt;li&gt;Activo los sensores de navegación y aterrizo en el portal principal de &lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Utilizo mi “hiper-ratón” para ubicar y señalar el botón &lt;strong&gt;“Sign up”&lt;/strong&gt; (Registrarse), situado en la esquina superior derecha de la pantalla.&lt;/li&gt;
+  &lt;li&gt;Y completo el formulario de registro con mis credenciales.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Nota: En este punto, asegúrate de emplear el &lt;a href=&quot;Identidad-Secreta&quot;&gt;nombre de usuario&lt;/a&gt; que hemos creado previamente. Además, como recomendación, genera una cuenta de correo electrónico utilizando ese mismo nombre de usuario y úsala en el formulario de registro. Por último, elige una contraseña sólida y segura.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Nota:&lt;/em&gt; En este punto, debo asegurarme de usar el &lt;a href=&quot;Identidad-Secreta&quot;&gt;nombre de usuario&lt;/a&gt; que he creado previamente. Además, que me he creado una cuenta de correo electrónico utilizando este mismo nombre de usuario y es lo que usare en el formulario de registro. Por último, usare una contraseña sólida, compleja y bastante segura y adicional activare doble autenticación.&lt;/p&gt;
 
-&lt;p&gt;No olvides verificar tu dirección de correo electrónico para completar el proceso.&lt;/p&gt;
+&lt;p&gt;No me debo olvidar verificar mi dirección de correo electrónico para completar este proceso.&lt;/p&gt;
 
 &lt;h3 id=&quot;construcción-de-la-nave-espacial-github-usergithubio&quot;&gt;Construcción de la nave espacial GitHub (user.github.io)&lt;/h3&gt;
 
-&lt;p&gt;Una vez que nos registramos en Github, procedemos a crear nuestra página web, nuestro blog, nuestra nave especial que nos permitirá llegar a todos los rincones del espacio digital, para ello seguimos los siguientes pasos:&lt;/p&gt;
+&lt;p&gt;Una vez registrado en Github, procedo a crear mi página web, mi blog personal, mi nave especial que me permitirá llegar a todos los rincones del espacio digital, y para ello tengo el siguiente mapa que debo seguir:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Enciende tus sistemas y accede a tu cuenta de GitHub.&lt;/li&gt;
-  &lt;li&gt;Activa el propulsor de “Create” (Crear) al pulsar el botón “+” en la esquina superior derecha.&lt;/li&gt;
-  &lt;li&gt;Selecciona “New repository” (Nuevo repositorio) desde el menú emergente.&lt;/li&gt;
+  &lt;li&gt;Enciendo el sistema e ingreso a mi cuenta en GitHub.&lt;/li&gt;
+  &lt;li&gt;Activo el propulsor de “Create” (Crear) al pulsar el botón “+” en la esquina superior derecha.&lt;/li&gt;
+  &lt;li&gt;Selecciono “New repository” (Nuevo repositorio) desde el menú emergente.&lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Sintoniza el “Repository name” (Nombre del repositorio) y establece el nombre de usuario de tu cuenta de GitHub seguido de “.github.io”.&lt;/p&gt;
+    &lt;p&gt;Sintonizo el “Repository name” (Nombre del repositorio) y establezco el nombre de usuario de mi cuenta de GitHub seguido de “.github.io”.&lt;/p&gt;
 
     &lt;blockquote&gt;
-      &lt;p&gt;Por ejemplo, si eres un intrépido piloto llamado “3st3bl0gm3gust4”, el nombre de tu repositorio sería “3st3bl0gm3gust4.github.io”.&lt;/p&gt;
+      &lt;p&gt;Ejemplo, si eres un intrépido piloto llamado “3st3bl0gm3gust4”, el nombre del repositorio sería “3st3bl0gm3gust4.github.io”.&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
-  &lt;li&gt;Deja la sección de descripción en blanco, o agrega un mensaje sobre tu misión espacial en línea.&lt;/li&gt;
+  &lt;li&gt;Dejo la sección de descripción en blanco, o quizas puedo agregar un mensaje sobre mi misión espacial en línea.&lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Ajusta los escudos de “Public” (Público) para que tu nave sea visible para todos los seres en esta galaxia digital.&lt;/p&gt;
+    &lt;p&gt;Ajusto los escudos de “Public” (Público) para que mi nave sea visible para todos los seres en esta galaxia digital.&lt;/p&gt;
 
     &lt;blockquote&gt;
-      &lt;p&gt;Si lo deseas, configura tu hipercomputadora para “Initialize this repository with a README” (Inicializar este repositorio con un README).&lt;/p&gt;
+      &lt;p&gt;Creo que puedo configurar mi hipercomputadora para “Initialize this repository with a README” (Inicializar este repositorio con un README).&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
-  &lt;li&gt;Cuando todo esté en su lugar, pulsa el botón “Create repository” (Crear repositorio) para dar vida a tu nave.&lt;/li&gt;
+  &lt;li&gt;Cuando todo esté en su lugar, debo pulsar el botón “Create repository” (Crear repositorio) para dar vida a mi nave.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;sintonización-del-generador-de-estilo-espacial-jekyll&quot;&gt;Sintonización del generador de estilo espacial Jekyll&lt;/h3&gt;
 
-&lt;p&gt;En resumen hasta este punto ya tenemos un nombre de usuario creado, un logo, un banner, una cuenta de correo con nuestro nombre de usuario, una cuenta de github y un repositorio, tipo: &lt;strong&gt;usuario.github.io&lt;/strong&gt;, ahora solo procedemos a usar una plantilla para nuestra web.&lt;/p&gt;
+&lt;p&gt;¡Impresionante lo que he logrado! Tengo un nombre de usuario, un logo, un banner, una cuenta de correo con mi nombre de usuario, una cuenta de github y un repositorio, tipo: &lt;strong&gt;usuario.github.io&lt;/strong&gt;, ahora solo debo proceder a usar una plantilla para mi web.&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Adentra tu nave en el corazón del repositorio recién creado.&lt;/li&gt;
-  &lt;li&gt;Enciende los sistemas de comunicación y dirígete a “Settings” (Configuración) en la parte superior del menú.&lt;/li&gt;
-  &lt;li&gt;Navega por el panel de control y selecciona la opción “Pages”.&lt;/li&gt;
-  &lt;li&gt;En la sección “GitHub Pages”, elige la ruta más rápida y selecciona la rama main (o la rama que prefieras) como el combustible de tu página.
+  &lt;li&gt;Ingreso a mi nave, en el corazón del repositorio recién creado.&lt;/li&gt;
+  &lt;li&gt;Enciendo los sistemas de comunicación y me hago clic en “Settings” (Configuración) en la parte superior del menú.&lt;/li&gt;
+  &lt;li&gt;Navego por el panel de control y selecciono la opción “Pages”.&lt;/li&gt;
+  &lt;li&gt;En la sección “GitHub Pages”, selecciono la ruta más rápida y luego la rama main (o la rama que prefiera) como el combustible de mi página.
     &lt;blockquote&gt;
-      &lt;p&gt;Esto activará el generador de estilos Jekyll, que será como la fuerza que dará forma a tu página web.&lt;/p&gt;
+      &lt;p&gt;Esto activará el generador de estilos Jekyll, que será como la fuerza que dará forma a mi página web.&lt;/p&gt;
     &lt;/blockquote&gt;
 
     &lt;blockquote&gt;
-      &lt;p&gt;Explora la base de datos de estilos intergalácticos haciendo clic en “Choose a theme” (Elegir un tema). Aquí puedes explorar y elegir entre una constelación de temas Jekyll.&lt;/p&gt;
+      &lt;p&gt;Exploro la base de datos de estilos intergalácticos haciendo clic en “Choose a theme” (Elegir un tema). Aquí puedos explorar y elegir entre una constelación de temas Jekyll.&lt;/p&gt;
     &lt;/blockquote&gt;
 
     &lt;blockquote&gt;
-      &lt;p&gt;Después de seleccionar tu estrella guía, confirma tu elección y deja que los sistemas se sincronicen.&lt;/p&gt;
+      &lt;p&gt;Después de seleccionar mi estrella guía, confirmo mi elección y dejo que los sistemas se sincronicen.&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;el-despegue-de-tu-sitio-espacial&quot;&gt;El despegue de tu sitio espacial:&lt;/h3&gt;
+&lt;h3 id=&quot;el-despegue-de-mi-sitio-espacial&quot;&gt;El despegue de mi sitio espacial&lt;/h3&gt;
 
-&lt;p&gt;El ordenador de a bordo trabajará incansablemente para traducir tu visión en código galáctico. Puedes monitorear el progreso en la pestaña “GitHub Pages”. Una vez que las estrellas se alineen y la generación esté completa, una señal luminosa te llevará a un enlace que marcará el punto de partida de tu viaje web en la parte superior de la pantalla. Ten en cuenta que puede llevar unos minutos para que tu sitio sea accesible en toda la galaxia, una vez concluido, ya podras visualizar tu sitio con la plantilla seleccionada desde &lt;strong&gt;3st3bl0gm3gust4.github.io&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;El ordenador de a bordo trabajará incansablemente para traducir mi visión en código galáctico. Puedo monitorear el progreso en la pestaña “GitHub Pages”. Una vez que las estrellas se alineen y la generación esté completa, una señal luminosa me llevará a un enlace que marcará el punto de partida de mi viaje en la parte superior de la pantalla. Debo tener en cuenta que puede llevarme unos minutos para que mi sitio sea accesible en toda la galaxia, una vez concluido, ya podre visualizar mi sitio con la plantilla seleccionada desde &lt;strong&gt;3st3bl0gm3gust4.github.io&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Y ahora, con tu propio “user.github.io” brillando en el espacio cibernético, puedes personalizar aún más tu nave web, ajustando las configuraciones del tema y editando los archivos proporcionados, creando publicaciones y adaptando según tus necesidades, etc.&lt;/p&gt;
+&lt;p&gt;Y ahora, con mi propio “user.github.io” brillando en el espacio cibernético, puedo personalizar aún más mi nave, ajustando las configuraciones del tema y editando los archivos proporcionados, creando publicaciones y adaptandolo según mis necesidades.&lt;/p&gt;
 
-&lt;p&gt;¡Y pues ahora que la fuerza del hacking ético te acompañe!&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;¡Y pues ahora que la fuerza del hacking ético nos acompañe! :)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -109,19 +110,22 @@
         <title>Más allá del Anonimato</title>
         <description>&lt;h2 id=&quot;conquista-galáctica-con-un-logo-y-un-banner&quot;&gt;Conquista galáctica con un logo y un banner&lt;/h2&gt;
 
-&lt;p&gt;En la publicación de &lt;a href=&quot;Identidad-Secreta&quot;&gt;La Fuerza del Anonimato&lt;/a&gt;, hablamos sobre la búsqueda del nombre de usuario perfecto, y aprendimos que al igual que un sable de luz, nuestro “Nick” debe irradiar ética y honor en todas las galaxias digitales donde aparezca.&lt;/p&gt;
+&lt;p&gt;En la publicación de &lt;a href=&quot;Identidad-Secreta&quot;&gt;La Fuerza del Anonimato&lt;/a&gt;, mencione la importancia de tener nombre de usuario que nos identifique, así aprendí que al igual que un sable de luz, nuestro “Nick” debe irradiar ética y honor en todas las galaxias digitales donde aparezca.&lt;/p&gt;
 
-&lt;p&gt;Ahora, en esta ocasión, vamos a dar un salto al hiperespacio y explorar cómo la inteligencia artificial puede ser nuestra aliada en la creación de un logo, (nuestra imagen) y un banner para nuestras redes sociales, tal como los jedis personalizaban sus sables con cristales kyber únicos.&lt;/p&gt;
+&lt;p&gt;Ahora, en esta ocasión, es hora de dar un salto al hiperespacio y explorar cómo la inteligencia artificial puede ser una gran aliada en la creación de un logo, (nuestra imagen) y un banner para usar en las redes sociales, tal como los jedis personalizaban sus sables con cristales.&lt;/p&gt;
 
-&lt;p&gt;Si chequeaste esa publicación del nick, sabes que utilizamos ChatGPT para crear o para inspirarnos en la creación del nombre de usuario. Ahora, como si estuviéramos en la Academia Jedi, vamos a convocar el poder de Bing, la inteligencia artificial de Microsoft, para materializar imágenes a partir de palabras clave, piensa en esto como si estuviéramos programando un droide astromecánico para que nos ayude en la batalla digital.&lt;/p&gt;
+&lt;p&gt;Si chequeaste esa publicación del nick, sabes que he utilizado ChatGPT para crear o para inspirarme en la creación del nombre de usuario. Ahora, como si estuviera en la Academia Jedi, convoco el poder de Bing, la inteligencia artificial de Microsoft, para materializar imágenes a partir de palabras clave, pienso en esto como si estuviera programando un droide astromecánico para que me ayude en la batalla digital.&lt;/p&gt;
 
-&lt;p&gt;Imaginemos que queremos un logo que combine ciertas palabras como “hackers”, “dragón ball”, “padawan”, “pentesting”, pues eso introducimos en el prompt del &lt;a href=&quot;https://www.bing.com/images/create/&quot;&gt;generador de imágenes bing&lt;/a&gt; y aguardamos como si estuviéramos en la guarida del maestro Yoda, para ver que resultado nos mostrara, luego solo seleccionamos la imagen que nos guste, desechamos las que no y voilà, &lt;strong&gt;¡tenemos nuestro propio emblema galáctico!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pienso que puedo crear un logo que combine ciertas palabras como “hackers”, “dragón ball”, “padawan”, “pentesting”, así que eso introduzco en el prompt del &lt;a href=&quot;https://www.bing.com/images/create/&quot;&gt;generador de imágenes bing&lt;/a&gt; y aguardo como si estuviera en la guarida del maestro Yoda, para ver que resultado me mostrara, luego solo selecciono la imagen que me guste, desecho la que no y listo, &lt;strong&gt;¡tengo mi propio emblema galáctico!&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Pero la saga continúa.&lt;/em&gt; Para el banner que dominará nuestras redes sociales, desembarcaremos en &lt;a href=&quot;https://www.canva.com/&quot;&gt;Canva&lt;/a&gt;, una estación espacial donde la creatividad no tiene límites. Aquí, como si construyéramos una base rebelde en la luna de Endor, cargamos nuestro logo y elegimos una plantilla para el banner. En este viaje, nuestra elección será similar a decidir si unirnos a la Resistencia o al Lado Oscuro.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Pero la saga continúa.&lt;/em&gt; Para el banner que dominará mis redes sociales, desembarcare en &lt;a href=&quot;https://www.canva.com/&quot;&gt;Canva&lt;/a&gt;, una estación espacial donde la creatividad no tiene límites. Aquí, como si construyéra una base rebelde en la luna de Endor, cargo el logo realizado antes y selecciono una plantilla para el banner.&lt;/p&gt;
 
-&lt;p&gt;Con las herramientas de edición, como si afináramos la puntería de un bláster, ajustamos el diseño según nuestros deseos, luego, como cuando Luke Skywalker destruye la Estrella de la Muerte, nosotros descargaremos el banner y celebraremos nuestra victoria: un logo, un banner y un nombre de usuario dignos de un hacker ético.&lt;/p&gt;
+&lt;p&gt;Con las herramientas de edición, como si afilara la puntería de un bláster, ajusto el diseño según mis deseos, luego, como cuando Luke Skywalker destruye la Estrella de la Muerte, me descargo el banner y celebro mi victoria: un logo, un banner y un nombre de usuario dignos de un hacker ético.&lt;/p&gt;
 
-&lt;p&gt;Para concluir, solo me resta desear que la fuerza del conocimiento cibernético nos guíe mientras continuamos escribiendo nuestra propia ruta de convertirnos en pentester profesional sin dinero y con ayuda de la inteligencia artificial.&lt;/p&gt;
+&lt;p&gt;Para concluir, solo me resta desear que la fuerza del conocimiento cibernético me guíe mientras continuo escribiendo mi propia ruta de convertirme en pentester profesional, sin dinero y con ayuda de la inteligencia artificial.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;¡Y que la fuerza del hacking ético nos acompañe! :)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -138,7 +142,7 @@
 
 &lt;p&gt;Guia de como usar bing para crear un logo.&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Crear imagen hacker usando Bing&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://drive.google.com/file/d/1G2w18_io5lbOvid0V5IUG7hGq8oGuKAV/view&quot;&gt;Crear imagen hacker usando Bing&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;table&gt;
@@ -189,7 +193,7 @@
   &lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Muestra respeto y humildad:&lt;/strong&gt;
     &lt;blockquote&gt;
-      &lt;p&gt;Un Padawan muestra respeto hacia sus Maestros y compañeros, tú como hacker ético o pentester debes ser respetuoso con tus colegas en la comunidad de hacking ético. Aprende a escuchar a los demás y sé humilde en tu búsqueda de conocimiento.&lt;/p&gt;
+      &lt;p&gt;Un Padawan muestra respeto hacia sus maestros y compañeros, tú como hacker ético o pentester debes ser respetuoso con tus colegas en la comunidad de hacking ético. Aprende a escuchar a los demás y sé humilde en tu búsqueda de conocimiento.&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Sé compasivo y ayuda a los demás:&lt;/strong&gt;
@@ -206,7 +210,7 @@
 
 &lt;p&gt;Recuerda que el hacking ético y el pentesting son disciplinas en constante evolución, y siempre estarás aprendiendo y desarrollándote como un auténtico Padawan en este emocionante viaje. ¡Que la Fuerza del conocimiento y la ética te acompañen en tu camino hacia la maestría en la seguridad informática!&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;¡Que la fuerza del hacking ético nos acompañe! :)
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;¡Y que la fuerza del hacking ético nos acompañe! :)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;table&gt;
@@ -257,6 +261,9 @@
 
 &lt;p&gt;En fin, en el mundo del pentesting, la identidad secreta que adoptamos como nombre de usuario es nuestra máscara virtual, nuestro traje de superhéroe que usamos para enfrentar los retos del ciberespacio. Al igual que nuestros héroes favoritos, canalizamos nuestro poder y creatividad en nuestras identidades secretas para marcar la diferencia y proteger el mundo digital. Así que, elige sabiamente tu nombre de usuario, y que la Fuerza del Anonimato guíe tus pasos en este emocionante viaje por el ciberespacio. ¡Adelante, valientes guardianes del pentesting!&lt;/p&gt;
 
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;¡Y que la fuerza del hacking ético nos acompañe! :)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 &lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
@@ -298,7 +305,7 @@
         <title>Hello World</title>
         <description>&lt;h2 id=&quot;hola-mundo&quot;&gt;Hola mundo!&lt;/h2&gt;
 
-&lt;p&gt;¡Hola y bienvenido! Soy un aprendiz de pentesting, un hacker novato sediento de sabiduría en este mundo digital. Como estudiante autodidacta, me siento inquisitivo y curioso, ansioso por descubrir el poder que yace en los bits y bytes. Considero que soy un padawan de los misteriosos 0 y 1 en esta simulación llamada mundo, donde mi sed de conocimiento me impulsa a aprender y crecer cada día.&lt;/p&gt;
+&lt;p&gt;¡Hola y bienvenido! Soy un aprendiz de pentesting, un hacker novato sediento de sabiduría en este mundo digital. Como estudiante autodidacta, me siento inquisitivo y curioso, ansioso por descubrir el poder que yace en los bits y bytes. Considero que soy un padawan de los misteriosos 0 y 1, en esta simulación llamada mundo, donde mi sed de conocimiento me impulsa a aprender y crecer cada día.&lt;/p&gt;
 
 &lt;p&gt;Con solo el ingenio como mi espada y la precaución como mi escudo, me embarco en un viaje emocionante y lleno de retos en el fascinante mundo de la ciberseguridad. Mi objetivo es convertirme en un hacker ético comprometido con la seguridad digital y la protección de la privacidad.&lt;/p&gt;
 
@@ -308,9 +315,12 @@
 
 &lt;p&gt;Sé que el camino no será fácil, pero estoy emocionado por enfrentar desafíos y superar obstáculos. ¡Cada día es una oportunidad para aprender algo nuevo y crecer como profesional!&lt;/p&gt;
 
-&lt;p&gt;Gracias por acompañarme en esta aventura. ¡Espero compartir contigo conocimientos, herramientas y descubrimientos que te inspiren en tu propio camino en la ciberseguridad!&lt;/p&gt;
+&lt;p&gt;Gracias por acompañarme en esta aventura. ¡Espero compartir contigo conocimientos, herramientas y descubrimientos que te inspiren en tu propio camino en el mundo hackers!&lt;/p&gt;
 
-&lt;p&gt;¡Sígueme en este emocionante viaje! Y que la fuerza nos acompañe.&lt;/p&gt;
+&lt;p&gt;¡Sígueme en este emocionante viaje!&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;¡Y que la fuerza del hacking ético nos acompañe! :)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;table&gt;
   &lt;thead&gt;

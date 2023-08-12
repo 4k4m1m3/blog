@@ -23,6 +23,10 @@ Es por ello que la elección del nombre de usuario en el mundo del pentesting va
 
 En fin, en el mundo del pentesting, la identidad secreta que adoptamos como nombre de usuario es nuestra máscara virtual, nuestro traje de superhéroe que usamos para enfrentar los retos del ciberespacio. Al igual que nuestros héroes favoritos, canalizamos nuestro poder y creatividad en nuestras identidades secretas para marcar la diferencia y proteger el mundo digital. Así que, elige sabiamente tu nombre de usuario, y que la Fuerza del Anonimato guíe tus pasos en este emocionante viaje por el ciberespacio. ¡Adelante, valientes guardianes del pentesting!
 
+```
+¡Y que la fuerza del hacking ético nos acompañe! :)
+```
+
 |   |
 |:--|
 |   |

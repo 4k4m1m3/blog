@@ -5,6 +5,8 @@ title: Comunidad
 
 # Mis redes
 
+**Recomendado: [Discord](https://discord.gg/8tTqd9ctHF)**
+
 [Twitch](https://www.twitch.tv/4k4m1m3) > | [Youtube](https://youtube.com/@4k4m1m3) > | [Twitter](https://twitter.com/4k4m1m3) > | [Kick](https://kick.com/4k4m1m3) > | [Github](https://github.com/4k4m1m3) > | [Tiktok](https://www.tiktok.com/@4k4m1m3) >
 
 

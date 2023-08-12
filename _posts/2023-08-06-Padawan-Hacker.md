@@ -20,7 +20,7 @@ published: true
 > En el camino del hacking, cometer errores es inevitable. Pero, al igual que un Padawan aprende de sus fracasos para mejorar, tú también debes ver los errores como oportunidades de aprendizaje. Analiza tus fallos, comprende las lecciones que te ofrecen y utiliza ese conocimiento para fortalecer tus habilidades.
 
 5. **Muestra respeto y humildad:**
-> Un Padawan muestra respeto hacia sus Maestros y compañeros, tú como hacker ético o pentester debes ser respetuoso con tus colegas en la comunidad de hacking ético. Aprende a escuchar a los demás y sé humilde en tu búsqueda de conocimiento.
+> Un Padawan muestra respeto hacia sus maestros y compañeros, tú como hacker ético o pentester debes ser respetuoso con tus colegas en la comunidad de hacking ético. Aprende a escuchar a los demás y sé humilde en tu búsqueda de conocimiento.
 
 6. **Sé compasivo y ayuda a los demás:**
 > La compasión y el deseo de ayudar a los demás también son valores importantes en el mundo del hacking ético. Comparte tus conocimientos y experiencias con otros aspirantes a hackers, ayudándoles a crecer en su camino de aprendizaje.
@@ -31,7 +31,7 @@ published: true
 Recuerda que el hacking ético y el pentesting son disciplinas en constante evolución, y siempre estarás aprendiendo y desarrollándote como un auténtico Padawan en este emocionante viaje. ¡Que la Fuerza del conocimiento y la ética te acompañen en tu camino hacia la maestría en la seguridad informática!
 
 ```
-¡Que la fuerza del hacking ético nos acompañe! :)
+¡Y que la fuerza del hacking ético nos acompañe! :)
 ```
 
 |   |
