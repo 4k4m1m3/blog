@@ -8,8 +8,10 @@ En este apartado estaré publicando los enlaces a publicaciones, vídeos, audios
 
 ### Proceso a paso a paso
 
+- [Unirme a una comunidad](../pages/comunidad)
 - [Decidirme por un nombre de usuario](../Identidad-Secreta)
 - [Crear un logo o avatar](../La-Imagen)
+- [Crear un blog en github](../La-Nave)
 - Editando...
 
 
