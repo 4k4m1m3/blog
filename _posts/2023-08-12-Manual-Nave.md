@@ -39,7 +39,7 @@ Mi próxima odisea se centra en el aprendizaje de Linux. Emularé la fuerza de K
 |   |
 
 Información del tema usado en este blog
-- [Theme Jekyll Hacker Blog](https://drive.google.com/file/d/1eQ-F38s7SgJo8hmMhOG-BQTOlw4kU5dJ/view)J
+- [Theme Jekyll Hacker Blog](https://drive.google.com/file/d/1eQ-F38s7SgJo8hmMhOG-BQTOlw4kU5dJ/view)
 
 |   |
 |:--|
