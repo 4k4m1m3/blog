@@ -28,6 +28,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-admin
+  - jekyll-youtube
 
 owner : "4k4m1m3"
 year : "2023"
