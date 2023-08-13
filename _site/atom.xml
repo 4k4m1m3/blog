@@ -12,6 +12,54 @@
     </author>
     
       <item>
+        <title>Manual de la nave</title>
+        <description>&lt;h2 id=&quot;como-puedo-usar-la-nave&quot;&gt;¿Como puedo usar la nave?&lt;/h2&gt;
+
+&lt;p&gt;En mi publicación anterior, exploramos cómo crear una &lt;a href=&quot;La-Nave&quot;&gt;nave espacial&lt;/a&gt; utilizando un impresionante tema de Jekyll. Pero ahora, me pregunto: ¿cómo puedo dominar su uso? ¿Cómo puedo personalizar, ajustar y optimizar mi nave galáctica de acuerdo a mis deseos y necesidades?&lt;/p&gt;
+
+&lt;p&gt;Como se trata de mi blog intergaláctico, mi página web en las estrellas, debo ajustar y configurar ciertos aspectos para que se adapten a mi estilo. Aquí hay algunos consejos valiosos: puedo incorporar mis redes sociales, mis objetivos, enlaces recomendados y lo que voy aprendiendo en todo este proceso. Puedo resaltar todo lo que deseo que el universo conozca sobre mí. Además, tengo la posibilidad de compartir publicaciones épicas y presentar vídeos emocionantes, ¡como una auténtica obra maestra galáctica!&lt;/p&gt;
+
+&lt;p&gt;En mi caso, he decidido utilizar esta plataforma para compartir paso a paso mi travesía en busca de convertirme en un maestro del pentesting, una especie de caballero Jedi en el mundo de la seguridad informática. Asimismo, deseo guiar a otros seres a través de lo que he aprendido, las hazañas que he conquistado y los pasos que he seguido. Aunque cada uno puede trazar su propio camino, mis experiencias pueden ser una constelación de orientación en su viaje hacia metas similares.&lt;/p&gt;
+
+&lt;p&gt;Ahora, adentrémonos en el universo de los comandos de Git. En esta etapa, comprender y dominar estos comandos es crucial. Aquí están algunas de las habilidades que he dominado:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;* git status:&lt;/strong&gt; Un vistazo a la situación actual de mi nave, qué cambios he realizado y qué está listo para ser enviado a la galaxia.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;* git pull:&lt;/strong&gt; Reuniendo las actualizaciones más recientes desde el remoto, como si estuviera absorbiendo la sabiduría de los antiguos maestros Jedi.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;* git push:&lt;/strong&gt; Empujando mis cambios y actualizaciones hacia el espacio exterior, asegurándome de que mi nave estelar esté en constante evolución.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;* git commit:&lt;/strong&gt; Registre mis cambios con comentarios significativos, como si estuviera tallando mis logros en la historia estelar.&lt;/p&gt;
+
+&lt;p&gt;En este punto, he forjado mi identidad en la red galáctica. Tengo un nombre de usuario que resuena a través del cosmos, una imagen que me representa, un estandarte que ondea en el viento del ciberespacio y una conexión en forma de correo electrónico que trasciende las dimensiones. Me he unido a la comunidad de hacking ético, siguiendo los pasos de distinguidos maestros Jedi, cada uno aportando su propia perspectiva a mi viaje. Mi blog es mi nave nodriza, donde comparto los tesoros de conocimiento que encuentro en mi camino.&lt;/p&gt;
+
+&lt;p&gt;En mi travesía, me he enfrentado a los comandos de GitHub. He aprendido a clonar repositorios, a entender el estado de mi nave cuando está bloqueada en una nebulosa de desarrollo, a sincronizar mis logros con el remoto y finalmente, a lanzar mis cambios y logros al espacio cósmico con un ‘push’.&lt;/p&gt;
+
+&lt;p&gt;Mi próxima odisea se centra en el aprendizaje de Linux. Emularé la fuerza de Kali Linux, dominaré sus comandos como si fueran trucos Jedi y aprenderé a virtualizarlo usando herramientas como VirtualBox o VMware. ¡Prepárense para las próximas emisiones cósmicas que expandirán nuestros horizontes intergalácticos! ¡Acompáñenme en esta épica aventura por el espacio informático!&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;¡Y que la fuerza del hacking ético nos acompañe! :)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Sat, 12 Aug 2023 00:00:00 -0500</pubDate>
+        <link>http://0.0.0.0:8000//Manual-Nave</link>
+        <link href="http://0.0.0.0:8000/Manual-Nave"/>
+        <guid isPermaLink="true">http://0.0.0.0:8000/Manual-Nave</guid>
+      </item>
+    
+      <item>
         <title>La nave</title>
         <description>&lt;h2 id=&quot;creando-mi-propia-estrella-de-la-galaxia-en-github&quot;&gt;Creando mi propia estrella de la galaxia en GitHub&lt;/h2&gt;
 

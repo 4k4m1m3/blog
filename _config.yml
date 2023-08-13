@@ -1,4 +1,3 @@
----
 title: 4k4m1m3 | blog
 description: "Blog personal de 4k4m1m3"
 author:
@@ -6,10 +5,7 @@ author:
   email: "4k4m1m3@gmail.com"
   url: "https://4k4m1m3.github.io/"
 
-baseurl: /
-
-source: .
-destination: ./_site
+baseurl: "" 
 permalink: /:title
 paginate: 5
 paginate_path: /page/:num/
@@ -23,12 +19,13 @@ defaults:
       layout: "post"
 
 future: true
+
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-admin
   - jekyll-youtube
-
-owner : "4k4m1m3"
-year : "2023"
+  
+owner: "4k4m1m3"
+year: "2023"
