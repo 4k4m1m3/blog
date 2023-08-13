@@ -5,7 +5,7 @@ author:
   email: "4k4m1m3@gmail.com"
   url: "https://4k4m1m3.github.io/"
 
-baseurl: "" 
+baseurl: /
 permalink: /:title
 paginate: 5
 paginate_path: /page/:num/
