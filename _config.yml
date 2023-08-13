@@ -27,6 +27,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-admin
 
 owner : "4k4m1m3"
 year : "2023"
