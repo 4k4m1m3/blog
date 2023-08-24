@@ -27,10 +27,3 @@ Entonces, al igual que en Star Wars donde cada personaje tiene su propia histori
 |   |
 |:--|
 |   |
-
-Información del tema usado en este blog
-- [Theme Jekyll Hacker Blog](https://drive.google.com/file/d/1eQ-F38s7SgJo8hmMhOG-BQTOlw4kU5dJ/view)
-
-|   |
-|:--|
-|   |
