@@ -33,7 +33,7 @@ Entiendo que una certificación por sí sola no me convertirá en un pentester p
 
 Como mencioné anteriormente, actualmente no cuento con los recursos necesarios para obtener las certificaciones correspondientes. Sin embargo, tengo un plan que es generar ingresos a través de vídeos en [Youtube](https://youtube.com/@4k4m1m3) y de transmisiones que pronto comenzaré a realizar en plataformas como [Twitch](https://www.twitch.tv/4k4m1m3) y [Kick](https://kick.com/4k4m1m3), tambien podran apoyarme directamente a través de [donaciones](apoyo) y acceder a beneficios exclusivos.
 
-_Si deseas apoyar de alguna manera con el objetivo te invito a visitar el apartado: [apoyo](apoyo)_
+
 
 |   |
 |:--|
