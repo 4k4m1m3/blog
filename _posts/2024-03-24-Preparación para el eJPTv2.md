@@ -30,7 +30,7 @@ Al completar el curso, no solo me siento preparado para enfrentar el desafío de
 
 ¡No pierdas la oportunidad de unirte a este emocionante viaje hacia convertirte en un profesional pentester altamente competente y ético! 
 
-![Preparación para la Certificación del eJPTv2](/blog/_posts/adjuntos/Certificado-4k4m1m3.png)
+![Preparación para la Certificación del eJPTv2](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/Certificado-4k4m1m3.png)
 
 ```
 ¡Y que la fuerza del hacking ético nos acompañe! :)
