@@ -30,7 +30,7 @@ En este apartado estaré publicando las máquinas que he desarrollado. Como esto
 
 | Máquina | Reto | OS | Autor | RT | BT | RP | Vídeo | Guías |
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|
-| OCLAT | 
+| OCLAT | | |   |   | [Reto1](https://4k4m1m3.github.io/blog/CTF-Reto1-OCLAT)|
 | PEPE THE FROG |
 | FAKE NEWS | Capturar
 | CRYPTOCORP | 🚩 user.txt | Linux | Mr.Wh1t3 |
