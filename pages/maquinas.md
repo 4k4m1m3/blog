@@ -15,11 +15,10 @@ En este apartado estaré publicando las máquinas que he desarrollado. Como esto
 6.  **BT:** Mis recomendaciones como blue team para intentar solucionar el fallo de seguridad.
 7.  **RP:** Mi intento de crear un reporte.
 8.  **Vídeo:** Enlace a un video resolviendo la máquina.
-9.  **Guías:** Enlace a las guías consultadas para resolver la máquina.
 
 * ## [Hack The Box](https://app.hackthebox.com/)
 
-| Máquina | Reto | OS | Autor | RT | BT | RP | Vídeo | Guías |
+| Máquina | Reto | OS | Autor | RT | BT | RP | Vídeo | Descargar |
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|
 | Meow | Capturar  | Linux |
 | Fawn| 🚩 user.txt | Linux |
@@ -28,9 +27,9 @@ En este apartado estaré publicando las máquinas que he desarrollado. Como esto
 
 * ## [CTF Comunidad Hacking Ético Español](https://ctf.comunidadhackingetico.es/challenges)
 
-| Máquina | Reto | OS | Autor | RT | BT | RP | Vídeo | Guías |
+| Máquina | Reto | OS | Autor | RT | BT | RP | Vídeo | Descargar |
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|
-| OCLAT | | |   |   | [Reto1](https://4k4m1m3.github.io/blog/CTF-Reto1-OCLAT)|
+| OCLAT | | |   | [Reto1](https://4k4m1m3.github.io/blog/CTF-Reto1-OCLAT)|  |  |  |   [PDFs](#)|            
 | PEPE THE FROG |
 | FAKE NEWS | Capturar
 | CRYPTOCORP | 🚩 user.txt | Linux | Mr.Wh1t3 |
@@ -40,19 +39,19 @@ En este apartado estaré publicando las máquinas que he desarrollado. Como esto
 
 * ## [VulNyx](https://vulnyx.com/)
 
-| Máquina | Reto | OS | Autor | RT | BT | RP | Vídeo | Guías |
+| Máquina | Reto | OS | Autor | RT | BT | RP | Vídeo | Descargar |
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|
 | Próximamente... |
 
 * ## [ShellDredd](https://shelldredd.github.io/maquinas-ctf)
 
-| Máquina | Reto | OS | Autor | RT | BT | RP | Vídeo | Guías |
+| Máquina | Reto | OS | Autor | RT | BT | RP | Vídeo | Descargar |
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|
 | Próximamente... |
 
 * ## [UnaAlMes](https://unaalmes.hispasec.com/challenges)
 
-| Máquina | Reto | OS | Autor | RT | BT | RP | Vídeo | Guías |
+| Máquina | Reto | OS | Autor | RT | BT | RP | Vídeo | Descargar |
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|
 | Próximamente... |
 
