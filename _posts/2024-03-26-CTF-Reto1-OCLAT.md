@@ -9,14 +9,15 @@ published: true
 tags:
   - CTF
   - estado/completado
-plataforma: "[[Comunidad de Hacking Ético]]"
-dificultad: fácil
-autor: "[[MisterWh1t3|MisterWh1t3]]"
-web: https://ctf.comunidadhackingetico.es/challenges
+  - plataforma: "[[Comunidad de Hacking Ético]]"
+  - dificultad: fácil
+  - autor: "[[MisterWh1t3|MisterWh1t3]]"
+  - web: https://ctf.comunidadhackingetico.es/challenges
 
 ---
-> [!INFO] OCLAT
->  **Dificultad :** Muy fácil  
+[!INFO] OCLAT
+
+> **Dificultad :** Muy fácil  
 > **Probado:** VirtualBox 6.x  
 > **Objetivo:** Obtener la flag de user.txt 
 > **Web:** [Home : - Web CTF de la Comunidad de Hacking Ético](https://ctf.comunidadhackingetico.es/) 
@@ -26,7 +27,8 @@ web: https://ctf.comunidadhackingetico.es/challenges
 >
 ^descripcion
 
-> [!FAQ]- Pistas
+[!FAQ]- Pistas
+
 > Maquina Linux
 > 
 ^pistas
@@ -70,12 +72,15 @@ Se observa que la maquina tiene el **puerto 21** abierto con el servicio de **FT
 # Análisis de vulnerabilidades
 
 > El escaneo con nmap muestra que existe el archivo `root.txt` y `user.txt` en el resultado del puerto 21 FTP
-> ![[ftp-mv-oclat.png]]
 
-> [!TIP] ¿Como descargar archivos por FTP?
+![ftp-mv-oclat.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/ftp-mv-oclat.png)
+
+[!TIP] ¿Como descargar archivos por FTP?
+
 > Usando el comando: `get +nombreDeArchivo`
 > 
-> ![[DescargarArchivosXftp.png]]
+
+[DescargarArchivosXftp.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/DescargarArchivosXftp.png)
 
 # Explotación de vulnerabilidades
 
@@ -88,16 +93,19 @@ Se observa que la maquina tiene el **puerto 21** abierto con el servicio de **FT
 > 
 > Intentemos subir un archivo de texto por FTP.
 >> Resultado: no tengo permiso para hacerlo
-> ![[SubirArchivosXftp.png]]
+
+![SubirArchivosXftp.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/SubirArchivosXftp.png)
+
 > Intentemos enviar el archivo usando `curl` por FTP:
 > > `curl -T prueba.txt ftp://10.6.8.11 -u anonymous:anonymous` 
 > > Resultado: `curl: (25) Failed FTP upload: 550`
-> 
+
 > Busquemos alguna vulnerabilidad en los servicios:
 >> `searchsploit vsftpd 3.0.3`
 >> `searchsploit OpenSSH 7.2p2`
 >> Resultado: pues nada interesante, al parecer denegación de servicio y enumeración de usuario.
 >
+
 > **_¡Por ahora no encontramos otra forma de acceso!_**
 
 ---
@@ -115,7 +123,8 @@ Se observa que la maquina tiene el **puerto 21** abierto con el servicio de **FT
 
 # Comandos
 
-> [!IMPORTANT] Resumen de comandos utilizados
+[!IMPORTANT] Resumen de comandos utilizados
+
 > :luc_terminal: `arp-scan -I enp0s31f6 -l`
 > :luc_terminal: `ping -c 1 10.6.8.11`
 > :luc_terminal: `nmap -p- --open -sC -sS -sV --min-rate=5000 -n -vvv -Pn 10.6.8.11 -oN scan-oclat`
