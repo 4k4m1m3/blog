@@ -20,10 +20,10 @@ tags:
 > **Dificultad :** Muy fácil  
 > **Probado:** VirtualBox 7.0 Debian  
 > **Objetivo:** Obtener la flag de user.txt + root.txt
-> **Enlace Descarga:**
->> [Enlace mega](https://mega.nz/#!TfxTkaBB!GLXUr8rG3qcLVS2ap4sMyjkUGODB9NCISy5xyvpjuc0)  
->> [Enlace gofile](https://gofile.io/d/jdJINx)
-> 
+
+  - **Enlace Descarga:**
+  - [Enlace mega](https://mega.nz/#!TfxTkaBB!GLXUr8rG3qcLVS2ap4sMyjkUGODB9NCISy5xyvpjuc0)  
+  - [Enlace gofile](https://gofile.io/d/jdJINx)
 
 # Reconocimiento
 
@@ -64,6 +64,7 @@ Se observa que la maquina tiene el **puerto 21** abierto con el servicio de **FT
 # Análisis de vulnerabilidades
 
 > El escaneo con nmap muestra que existe el archivo `root.txt` y `user.txt` en el resultado del puerto 21 FTP
+>
 > ![ftp-mv-oclat.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/ftp-mv-oclat.png)
 
 [!TIP] ¿Como descargar archivos por FTP?
@@ -81,20 +82,19 @@ Se observa que la maquina tiene el **puerto 21** abierto con el servicio de **FT
 > Como fue muy fácil y rápido el proceso, pues intentemos ver si existe otro vector de ataque, otra forma de ingreso, ¿que podríamos hacer?
 > 
 > Intentemos subir un archivo de texto por FTP.
->> Resultado: no tengo permiso para hacerlo
->> ![SubirArchivosXftp.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/SubirArchivosXftp.png)
+> Resultado: no tengo permiso para hacerlo
+> ![SubirArchivosXftp.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/SubirArchivosXftp.png)
 >
 > Intentemos enviar el archivo usando `curl` por FTP:
-> > `curl -T prueba.txt ftp://10.6.8.11 -u anonymous:anonymous` 
-> > Resultado: `curl: (25) Failed FTP upload: 550`
+> `curl -T prueba.txt ftp://10.6.8.11 -u anonymous:anonymous` 
+> Resultado: `curl: (25) Failed FTP upload: 550`
 >
 > Busquemos alguna vulnerabilidad en los servicios:
->> `searchsploit vsftpd 3.0.3`
->> `searchsploit OpenSSH 7.2p2`
->> Resultado: pues nada interesante, al parecer denegación de servicio y enumeración de usuario.
->
+> `searchsploit vsftpd 3.0.3`
+> `searchsploit OpenSSH 7.2p2`
+> Resultado: pues nada interesante, al parecer denegación de servicio y enumeración de usuario.
 
-> **_¡Por ahora no encontramos otra forma de acceso!_**
+###### **_¡Por ahora no encontramos otra forma de acceso!_**
 
 ---
 # Escalada de privilegios
@@ -103,26 +103,22 @@ Se observa que la maquina tiene el **puerto 21** abierto con el servicio de **FT
 
 # Bandera(s)
 
-> [!FLAG] 
->> `User = 4b5b6daa66328696e9e8a4e98c0d65ed`
->> `Root = df3529cfe9f737801b09dff8b7cb9ef4`
->
+[!FLAG] 
+  - `User = 4b5b6daa66328696e9e8a4e98c0d65ed`
+  - `Root = df3529cfe9f737801b09dff8b7cb9ef4`
 
 # Comandos
 
 [!IMPORTANT] Resumen de comandos utilizados
 
-> `arp-scan -I enp0s31f6 -l`
-> `ping -c 1 10.6.8.11`
-> `nmap -p- --open -sC -sS -sV --min-rate=5000 -n -vvv -Pn 10.6.8.11 -oN scan-oclat`
-> `ftp 10.6.8.11`
-> `ftp> get user.txt`
-> >`cat user.txt`
-> 
-> `ftp> get root.txt`
-> >`cat root.txt`
-> 
-
+  - `arp-scan -I enp0s31f6 -l`
+  - `ping -c 1 10.6.8.11`
+  - `nmap -p- --open -sC -sS -sV --min-rate=5000 -n -vvv -Pn 10.6.8.11 -oN scan-oclat`
+  - `ftp 10.6.8.11`
+  - `ftp> get user.txt`
+  - `cat user.txt`
+  - `ftp> get root.txt`
+  - `cat root.txt`
 
 ```
 ¡Que la fuerza del hacking ético nos acompañe! :)
