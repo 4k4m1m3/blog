@@ -9,29 +9,21 @@ published: true
 tags:
   - CTF
   - estado/completado
-  - plataforma: "[[Comunidad de Hacking Ético]]"
+  - plataforma: [CTF de la Comunidad de Hacking Ético](https://ctf.comunidadhackingetico.es/) 
   - dificultad: fácil
-  - autor: "[[MisterWh1t3|MisterWh1t3]]"
+  - autor: [MisterWh1t3](https://mister.wh1t3.es/)
   - web: https://ctf.comunidadhackingetico.es/challenges
 
 ---
 [!INFO] OCLAT
 
 > **Dificultad :** Muy fácil  
-> **Probado:** VirtualBox 6.x  
-> **Objetivo:** Obtener la flag de user.txt 
-> **Web:** [Home : - Web CTF de la Comunidad de Hacking Ético](https://ctf.comunidadhackingetico.es/) 
-> **Enlace Descarga:**  
+> **Probado:** VirtualBox 7.0 Debian  
+> **Objetivo:** Obtener la flag de user.txt + root.txt
+> **Enlace Descarga:**
 >> [Enlace mega](https://mega.nz/#!TfxTkaBB!GLXUr8rG3qcLVS2ap4sMyjkUGODB9NCISy5xyvpjuc0)  
 >> [Enlace gofile](https://gofile.io/d/jdJINx)
->
-^descripcion
-
-[!FAQ]- Pistas
-
-> Maquina Linux
 > 
-^pistas
 
 # Reconocimiento
 
@@ -72,15 +64,12 @@ Se observa que la maquina tiene el **puerto 21** abierto con el servicio de **FT
 # Análisis de vulnerabilidades
 
 > El escaneo con nmap muestra que existe el archivo `root.txt` y `user.txt` en el resultado del puerto 21 FTP
-
-![ftp-mv-oclat.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/ftp-mv-oclat.png)
+> ![ftp-mv-oclat.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/ftp-mv-oclat.png)
 
 [!TIP] ¿Como descargar archivos por FTP?
 
 > Usando el comando: `get +nombreDeArchivo`
-> 
-
-[DescargarArchivosXftp.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/DescargarArchivosXftp.png)
+> ![DescargarArchivosXftp.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/DescargarArchivosXftp.png)
 
 # Explotación de vulnerabilidades
 
@@ -93,13 +82,12 @@ Se observa que la maquina tiene el **puerto 21** abierto con el servicio de **FT
 > 
 > Intentemos subir un archivo de texto por FTP.
 >> Resultado: no tengo permiso para hacerlo
-
-![SubirArchivosXftp.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/SubirArchivosXftp.png)
-
+>> ![SubirArchivosXftp.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/SubirArchivosXftp.png)
+>
 > Intentemos enviar el archivo usando `curl` por FTP:
 > > `curl -T prueba.txt ftp://10.6.8.11 -u anonymous:anonymous` 
 > > Resultado: `curl: (25) Failed FTP upload: 550`
-
+>
 > Busquemos alguna vulnerabilidad en los servicios:
 >> `searchsploit vsftpd 3.0.3`
 >> `searchsploit OpenSSH 7.2p2`
@@ -116,26 +104,25 @@ Se observa que la maquina tiene el **puerto 21** abierto con el servicio de **FT
 # Bandera(s)
 
 > [!FLAG] 
-> `User = 4b5b6daa66328696e9e8a4e98c0d65ed`
-> `Root = df3529cfe9f737801b09dff8b7cb9ef4`
+>> `User = 4b5b6daa66328696e9e8a4e98c0d65ed`
+>> `Root = df3529cfe9f737801b09dff8b7cb9ef4`
 >
-^bandera
 
 # Comandos
 
 [!IMPORTANT] Resumen de comandos utilizados
 
-> :luc_terminal: `arp-scan -I enp0s31f6 -l`
-> :luc_terminal: `ping -c 1 10.6.8.11`
-> :luc_terminal: `nmap -p- --open -sC -sS -sV --min-rate=5000 -n -vvv -Pn 10.6.8.11 -oN scan-oclat`
-> :luc_terminal: `ftp 10.6.8.11`
-> :luc_terminal: `ftp> get user.txt`
-> > `cat user.txt`
+> `arp-scan -I enp0s31f6 -l`
+> `ping -c 1 10.6.8.11`
+> `nmap -p- --open -sC -sS -sV --min-rate=5000 -n -vvv -Pn 10.6.8.11 -oN scan-oclat`
+> `ftp 10.6.8.11`
+> `ftp> get user.txt`
+> >`cat user.txt`
 > 
-> :luc_terminal: `ftp> get root.txt`
-> > `cat root.txt`
+> `ftp> get root.txt`
+> >`cat root.txt`
 > 
-^comandos
+
 
 ```
 ¡Que la fuerza del hacking ético nos acompañe! :)
