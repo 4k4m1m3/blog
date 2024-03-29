@@ -16,7 +16,7 @@ En este apartado estaré publicando las máquinas que he desarrollado. Como esto
 
 * ## [Hack The Box](https://app.hackthebox.com/)
 
-| Máquina | Reto | OS | Autor | RT | Vídeo | Descargar |
+| Máquina | Reto | OS | Autor | Publicación | Vídeo | WriteUps |
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|
 | Meow | Capturar  | Linux |
 | Fawn| 🚩 user.txt | Linux |
@@ -25,7 +25,7 @@ En este apartado estaré publicando las máquinas que he desarrollado. Como esto
 
 * ## [CTF Comunidad Hacking Ético Español](https://ctf.comunidadhackingetico.es/challenges)
 
-| Máquina | Reto | OS | Autor | RT | Vídeo | Descargar |
+| Máquina | Reto | OS | Autor | Publicación | Vídeo | WriteUps |
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|
 | OCLAT | | |   | [Reto1](https://4k4m1m3.github.io/blog/CTF-Reto1-OCLAT)|  |   [PDFs](https://github.com/4k4m1m3/blog/blob/main/_posts/adjuntos/pdfs/OCLAT.pdf)|            
 | PEPE THE FROG |
@@ -37,19 +37,19 @@ En este apartado estaré publicando las máquinas que he desarrollado. Como esto
 
 * ## [VulNyx](https://vulnyx.com/)
 
-| Máquina | Reto | OS | Autor | RT | Vídeo | Descargar |
+| Máquina | Reto | OS | Autor | Publicación | Vídeo | WriteUps |
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|
 | Próximamente... |
 
 * ## [ShellDredd](https://shelldredd.github.io/maquinas-ctf)
 
-| Máquina | Reto | OS | Autor | RT | Vídeo | Descargar |
+| Máquina | Reto | OS | Autor | Publicación | Vídeo | WriteUps |
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|
 | Próximamente... |
 
 * ## [UnaAlMes](https://unaalmes.hispasec.com/challenges)
 
-| Máquina | Reto | OS | Autor | RT | Vídeo | Descargar |
+| Máquina | Reto | OS | Autor | Publicación | Vídeo | WriteUps |
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|
 | Próximamente... |
 
