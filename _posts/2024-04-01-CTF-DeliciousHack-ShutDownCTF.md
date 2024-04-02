@@ -9,10 +9,10 @@ published: true
 tags:
   - CTF
   - estado/completado
-  - plataforma: [[DeliciousHack]]
+  - plataforma: [DeliciousHack]
   - dificultad: Fácil
-  - autor: [[ShellDredd]]
----
+  - autor: [ShellDredd]
+
 
 # Datos
 
@@ -20,8 +20,9 @@ tags:
   -   **Nombre:** ShutDownCTF
   -  **SO:** Linux
   -  **Dificultad:** Fácil  
-  -   **Creador:**  [[ShellDredd|ShellDredd]]
+  -   **Creador:**  [ShellDredd]
   -  **Descargar**: [CTF SHUTDOWN](https://delicioushack.com/shutdown.html)
+
 
 [!TIP] Objetivo
 
@@ -92,16 +93,20 @@ Al parecer existe un directorio llamado `wp-admin` lo que indica que muy probabl
 ![MetaDatosCTFShutD.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/MetaDatosCTFShutD.png)
 
 ___
-  - [!WARNING] ¡Bloqueado!
-  -  A este punto ya me encontraba bloqueado, no sabia por donde continuar, así que procedo a chequear un poco del WriteUps.
-  -  **Cabecera (header)**
-  -  Se menciona que la clave esta en fijarnos en el header de los archivos y esto lo hago con el comando: `curl -I URL` eso fue lo que he realizado y el resultado fue que se puede ejecutar comandos en el sistema, con la función `php_GET:system($shell)`, usando la variable `$shell`, por lo tanto esto es un [[Path Traversal]] 
-  -  ![CurlCTFShutD.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/CurlCTFShutD.png)
+[!WARNING] ¡Bloqueado!
+A este punto ya me encontraba bloqueado, no sabia por donde continuar, así que procedo a chequear un poco del WriteUps.
+
+**Cabecera (header)**
+Se menciona que la clave esta en fijarnos en el header de los archivos y esto lo hago con el comando: `curl -I URL` eso fue lo que he realizado y el resultado fue que se puede ejecutar comandos en el sistema, con la función `php_GET:system($shell)`, usando la variable `$shell`, por lo tanto esto es un [[Path Traversal]] 
+
+![CurlCTFShutD.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/CurlCTFShutD.png)
+
 
 ```text
 Lección aprendida: 
 Siempre fijarse en las cabeceras de los archivos
 ```
+
 -----
 
 Ya con esta información procedo a realizar el típico:
@@ -146,7 +151,7 @@ debian-tor:x:107:114::/var/lib/tor:/bin/false
 administrator:x:1001:1001::/home/administrator:/bin/bash
 ```
 
-[!INFO] Consultado id_rsa del usuario
+[!INFO] Consultado **id_rsa** del usuario
   -  Algo que rápidamente intento es consultar el archivo `id_rsa` del usuario `administrator` en la ruta: `/home/administrator/.ssh/id_rsa` ya que el `servicio ssh` esta abierto en el `puerto 6969`
 
 **Seria así:**
@@ -173,9 +178,11 @@ Organizando un poco la información:
 Como ya sabrás después del día de presentación, el servidor de DeliciousHack tiene deshabilitado SSH por ahora, así que tendrás que utilizar TELNET, pero no hagas como tu compañero de práticas, que no recordaba la contraseña y utilizó fuerza bruta para entrar... Nos dejó logs en el monitoreo y se quejaron los de SOC1... Espero que no rompas nada en mis días de vacaciones. Un saludo, Raimundo[Admin Senior]
 ```
 
+
 [[ShellDredd]] si llegas a leer esto, te quiero decir lo siguiente:
 
 ![TeOdioCTFShutD.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/TeOdioCTFShutD.png)
+
 
   - ¿Por que complicas todo? xD
 
@@ -185,6 +192,7 @@ Del mensaje mostrado, puedo sacar lo que podría ser algunas claves:
 - Me parece un engaño que diga que el SSH esta deshabilitado pues ya vimos que se esta ejecutando en el **puerto 6969**
 - ¿Me estará diciendo que no haga fuerza bruta a telnet? 
 	- El hacerlo dejara log y no queremos ser descubiertos.
+
 
 #### ¡Hagamos lo contrario a lo que nos dice!
 
@@ -315,7 +323,7 @@ Uno de los primeros intentos fue realizar un ataque de fuerza bruta con `hydra` 
 
   - También intente un ataque de fuerza bruta al servicio ssh con el usuario root, pero sin buenos resultados.
 
-##### ¡Estamos dentro!
+#### ¡Estamos dentro!
 
 ![EstamosDentroCTFShutD.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/EstamosDentroCTFShutD.png)
 
@@ -395,7 +403,7 @@ Y efectivamente, es un archivo comprimido en zip, que tiene un archivo llamado `
 
 ![g-accesosCTFShutD.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/g-accesosCTFShutD.png)
 
-#### ¡John The Ripper! Yo te invoco
+### ¡John The Ripper! Yo te invoco
 
 **(Decepción total conmigo) - Al final fue mucho mas fácil de lo esperado.**
   - Tenia que haber empezando por aquí desde un principio.
@@ -430,7 +438,7 @@ Y luego de colocar la contraseña en el archivo comprimido y acceder al archivo 
 
 [!FLAG] 
   - `User=flag{RGViZXMgb2J0ZW5lcmxhIHR1IG1pc21v}`
-  -  `Root=flag{QnVzY2EgdHUgbWlzbW8gbGEgZmxhZw==}`
+  - `Root=flag{QnVzY2EgdHUgbWlzbW8gbGEgZmxhZw==}`
 
 # Comandos
 
