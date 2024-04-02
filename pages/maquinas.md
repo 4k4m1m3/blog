@@ -26,6 +26,12 @@ En este apartado estaré publicando las máquinas que he desarrollado. Como esto
 | SERVER-ST |
 | 3S4lt0 |
 
+* ## [Delicious Hack](https://delicioushack.com/maquinas-ctf)
+
+| Máquina | Reto | OS | Autor | Publicación | Vídeo | WriteUps |
+|:--|:--|:--|:--|:--|:--|:--|:--|:--|
+| ShutDownCTF | 🚩 user.txt & 🚩 root.txt| Linux | ShellDredd  | [ShutDownCTF](https://4k4m1m3.github.io/blog/CTF-DeliciousHack-ShutDownCTF)|  |   [PDFs](https://github.com/4k4m1m3/blog/blob/main/_posts/adjuntos/pdfs/ShutDownCTF.pdf)|            
+
 * ## [VulNyx](https://vulnyx.com/)
 
 | Máquina | Reto | OS | Autor | Publicación | Vídeo | WriteUps |
