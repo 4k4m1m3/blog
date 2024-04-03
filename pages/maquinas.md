@@ -36,7 +36,7 @@ En este apartado estaré publicando las máquinas que he desarrollado. Como esto
 
 | Máquina | Reto | OS | Autor | Publicación | Vídeo | WriteUps |
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|
-| Fruits | 🚩 user.txt & 🚩 root.txt| Linux | Condor & CuriosidadesDeHackers | [FruitsCTF](#)|  |   [PDFs](#)|    
+| Fruits | 🚩 user.txt & 🚩 root.txt| Linux | Condor & CuriosidadesDeHackers | [FruitsCTF](https://4k4m1m3.github.io/blog/CTF-TheHackersLabs-Fruits)|  |   [PDFs](https://github.com/4k4m1m3/blog/blob/main/_posts/adjuntos/pdfs/WriteUps-Fruits.pdf)|    
 
 * ## [ShellDredd](https://shelldredd.github.io/maquinas-ctf)
 
