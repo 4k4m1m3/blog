@@ -13,6 +13,7 @@ tags:
   - dificultad: Fácil
   - autor 1: [CuriosidadesDeHackers]
   - autor 2: [Condor]
+    
 ---
 
 # Datos
