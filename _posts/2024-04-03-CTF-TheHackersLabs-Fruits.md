@@ -11,7 +11,8 @@ tags:
   - estado/completado
   - plataforma: [TheHackersLabs]
   - dificultad: Fácil
-  - autor: [CuriosidadesDeHackers] - [Condor]
+  - autor 1: [CuriosidadesDeHackers]
+  - autor 2: [Condor]
 ---
 
 # Datos
@@ -25,10 +26,12 @@ tags:
   -  **Descargar**: [The Hackers Labs](https://thehackerslabs.com/)
 
 [!TIP] Objetivo
-  **IP Address:** 10.6.6.55
-  **Obtener las flags:** 
-  - 🚩 user.txt 
-  - 🚩 root.txt|
+
+ - **IP Address:** 10.6.6.55
+ - **Obtener las flags:** 
+	> 🚩 user.txt
+	>
+	> 🚩 root.txt|
 
 # Reconocimiento
 
@@ -50,6 +53,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 
 # Anotaciones
+
 [!FAQ] Observaciones
   - El escaneo muestra 2 puertos abiertos, el **puerto 22** con el **servicio SSH** con la versión *OpenSSH 9.2p1* y adicional el **puerto 80** con el **servicio Apache**, versión httpd *2.4.57*.
 
@@ -125,7 +129,7 @@ A simple vista, el código fuente, no me da mucha información, así que procedo
 
 A este punto, lo siguiente que intentaría, es hacer fuzzing de extensiones y/o directorios.
 
-#### Realizando escaneo a la web
+### Realizando escaneo a la web
 
 - `dirb http://10.6.6.55/`
 	- `+ http://10.6.6.55/index.html (CODE:200|SIZE:1811)`
@@ -164,7 +168,7 @@ A este punto, lo siguiente que intentaría, es hacer fuzzing de extensiones y/o 
 
 Luego de intentar con varias herramientas y varios directorios, pues lo único que encuentro es un archivo llamado: `fruits.php` pero no tiene nada de contenido, ni en su código fuente, ni nada, así que imagino es todo es php o que se yo… Otra cosa que se me ocurre es cargar burp suite y ver como procede con la petición al pulsar el botón buscar en el index.
 
-#### Burp suite
+### Burp suite
 
 Buscando interceptar la petición y ~~al parecer~~ este sitio no esta conectando con una base de datos, así que cualquier solicitud, cualquier búsqueda que se realice, obtendré un: **Not found**
 
@@ -194,7 +198,7 @@ Luego de verme bloqueado, he pedido un consejo en el [canal de Discord](https://
   - **_Fuente: Mi gran amigo ChatGPT._**
 
 
-#### La clave esta en el fuzzing
+### La clave esta en el fuzzing
 
 Pues eso, ademas de indicarme que estaba en un agujero de concejo, se me indico que la clave estaba en hacer fuzzing, y en especial fuzzing de extensiones, así que volvemos a ello, pero, si ya hice fuzzing, aunque mas enfocado a directorios, ¿que puedo cambiar? 
 
