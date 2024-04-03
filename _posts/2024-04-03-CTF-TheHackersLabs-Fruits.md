@@ -32,7 +32,7 @@ tags:
  - **Obtener las flags:** 
      > 🚩 user.txt
      > 
-     > > 🚩 root.txt|
+     > 🚩 root.txt|
 
 # Reconocimiento
 
