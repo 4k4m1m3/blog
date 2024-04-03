@@ -11,8 +11,9 @@ tags:
   - estado/completado
   - plataforma: [TheHackersLabs]
   - dificultad: Fácil
-  - autor: [CuriosidadesDeHackers] - [Condor]
----
+  - autor 1: [CuriosidadesDeHackers]
+  - autor 2: [Condor]
+  ---
 
 # Datos
 
@@ -25,7 +26,9 @@ tags:
   -  **Descargar**: [The Hackers Labs](https://thehackerslabs.com/)
 
 [!TIP] Objetivo
+
   **IP Address:** 10.6.6.55
+  
   **Obtener las flags:** 
   - 🚩 user.txt 
   - 🚩 root.txt|
