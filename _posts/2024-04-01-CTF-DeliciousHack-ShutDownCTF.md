@@ -17,10 +17,10 @@ tags:
 # Datos
 
 [!INFO] CTF
-  -   **Nombre:** ShutDownCTF
+  -  **Nombre:** ShutDownCTF
   -  **SO:** Linux
   -  **Dificultad:** Fácil  
-  -   **Creador:**  [ShellDredd]
+  -  **Creador:**  [ShellDredd]
   -  **Descargar**: [CTF SHUTDOWN](https://delicioushack.com/shutdown.html)
 
 

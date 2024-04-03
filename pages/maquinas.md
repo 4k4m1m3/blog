@@ -32,11 +32,11 @@ En este apartado estaré publicando las máquinas que he desarrollado. Como esto
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|
 | ShutDownCTF | 🚩 user.txt & 🚩 root.txt| Linux | ShellDredd  | [ShutDownCTF](https://4k4m1m3.github.io/blog/CTF-DeliciousHack-ShutDownCTF)|  |   [PDFs](https://github.com/4k4m1m3/blog/blob/main/_posts/adjuntos/pdfs/ShutDownCTF.pdf)|            
 
-* ## [VulNyx](https://vulnyx.com/)
+* ## [TheHackersLabs](https://thehackerslabs.com/)
 
 | Máquina | Reto | OS | Autor | Publicación | Vídeo | WriteUps |
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|
-| Próximamente... |
+| Fruits | 🚩 user.txt & 🚩 root.txt| Linux | Condor & CuriosidadesDeHackers | [FruitsCTF](#)|  |   [PDFs](#)|    
 
 * ## [ShellDredd](https://shelldredd.github.io/maquinas-ctf)
 
