@@ -30,9 +30,9 @@ tags:
 
  - **IP Address:** 10.6.6.55
  - **Obtener las flags:** 
-	> 🚩 user.txt
-	>
-	> 🚩 root.txt|
+     > 🚩 user.txt
+     > 
+     > > 🚩 root.txt|
 
 # Reconocimiento
 
@@ -196,7 +196,7 @@ Luego de verme bloqueado, he pedido un consejo en el [canal de Discord](https://
 
 [!INFO] Concepto Rabbit Hole
   - **Agujero de conejo**; en el contexto de CTF (Capture The Flag) se refiere a una situación en la que un participante del CTF se encuentra explorando una pista o un conjunto de datos que parecen ser relevantes para resolver un desafío, pero que en realidad no lo son. En lugar de avanzar hacia la solución del desafío, el participante se "cae por el agujero de conejo" y pierde tiempo y recursos en una dirección incorrecta.
-  - **_Fuente: Mi gran amigo ChatGPT._**
+**_Fuente: Mi gran amigo ChatGPT._**
 
 
 ### La clave esta en el fuzzing
