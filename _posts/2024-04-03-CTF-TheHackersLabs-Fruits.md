@@ -11,7 +11,8 @@ tags:
   - estado/completado
   - plataforma: [TheHackersLabs]
   - dificultad: Fácil
-  - autor: [CuriosidadesDeHackers] - [Condor]
+  - autor 1: [CuriosidadesDeHackers]
+  - autor 2: [Condor]
 ---
 
 # Datos
@@ -25,10 +26,12 @@ tags:
   -  **Descargar**: [The Hackers Labs](https://thehackerslabs.com/)
 
 [!TIP] Objetivo
-  **IP Address:** 10.6.6.55
-  **Obtener las flags:** 
-  - 🚩 user.txt 
-  - 🚩 root.txt|
+
+- **IP Address:** 10.6.6.55
+- **Obtener las flags:**
+  > 🚩 user.txt
+  > 
+  > 🚩 root.txt
 
 # Reconocimiento
 
@@ -55,7 +58,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Cuando ingreso desde el navegador, a la dirección IP del objetivo por el puerto 80, me encuentro con la siguiente pantalla:
 
-![[PantallaPuerto80Fruits.png]]
+![PantallaPuerto80Fruits.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/PantallaPuerto80Fruits.png)
 
 Como primer paso, procedo a realizar un chequeo del código fuente de este sitio web, lo cual me muestra lo siguiente:
 
@@ -126,6 +129,7 @@ A simple vista, el código fuente, no me da mucha información, así que procedo
 A este punto, lo siguiente que intentaría, es hacer fuzzing de extensiones y/o directorios.
 
 #### Realizando escaneo a la web
+
 - `dirb http://10.6.6.55/`
 	- `+ http://10.6.6.55/index.html (CODE:200|SIZE:1811)`
 	- `+ http://10.6.6.55/server-status (CODE:403|SIZE:274) `
@@ -186,11 +190,10 @@ Connection: close
 
 Luego de verme bloqueado, he pedido un consejo en el [canal de Discord](https://discord.gg/Ata5xk4F3M) de los creadores del CTF y el usuario [[Condor]] me indico que estaba en un **rabbit hole** concepto totalmente nuevo para mi, pero sin embargo me dio la pista clave para saber que tenia que intentar otro camino.
 
-![[RabbitHoleFruits.png]]
+![RabbitHoleFruits.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/RabbitHoleFruits.png)
 
 [!INFO] Concepto Rabbit Hole
   - **Agujero de conejo**; en el contexto de CTF (Capture The Flag) se refiere a una situación en la que un participante del CTF se encuentra explorando una pista o un conjunto de datos que parecen ser relevantes para resolver un desafío, pero que en realidad no lo son. En lugar de avanzar hacia la solución del desafío, el participante se "cae por el agujero de conejo" y pierde tiempo y recursos en una dirección incorrecta.
-  - 
   - **_Fuente: Mi gran amigo ChatGPT._**
 
 
@@ -261,14 +264,13 @@ Sin embargo, luego de varios intentos, de varias pruebas, seguía sin lograr nad
 wfuzz -c -t 200 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --hl 1 'http://10.6.6.55/fruits.php?FUZZ=/etc/passwd'
 ```
 
-![[ResolviendoMaqTHLabs.png]]
+![ResolviendoMaqTHLabs.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/ResolviendoMaqTHLabs.png)
 
 Así que la primera palabra que me dio el ChatGPT era la correcta, otra cosa que estaba haciendo mal, es que añadía: `../../../../../../../../` y en este caso en particular eso no servia.
 
 [!INFO] ¡Lección aprendida!
   - Esto me deja de enseñanza probar diferentes diccionarios, diferentes herramientas, cambiar parámetros y que no todas las maquinas son iguales, que no siempre el LFI, se aplica un path traversal.
-  -
-  -**NOTA**: Muchas gracias a todos los que participaran en el canal de voz discord y en especial, gracias a `feer248og`, `CuriosidadesDeHackers`, `feer248og` y `br0k3n.c0de`
+  - **NOTA**: Muchas gracias a todos los que participaran en el canal de voz discord y en especial, gracias a `feer248og`, `CuriosidadesDeHackers`, `feer248og` y `br0k3n.c0de`
 
 Lo cierto, es que al final añadiendo el parámetro correcto a la url, me da información bastante interesante:
 
@@ -323,11 +325,11 @@ Resultado obtenido:
 
 Buscamos conectarnos por SSH, logramos el acceso y con eso obtenemos nuestra primera flag, la del usuario.
 
-![[FlagUserBananamCTFFruits.png]]
+![FlagUserBananamCTFFruits.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/FlagUserBananamCTFFruits.png)
 
 # Escalada de privilegios
 
-Estando dentro, lo primero que hago es probar un: `sudo -l` lo principal en estos caso, luego de ello, obtengo el siguiente resultado:
+Estando dentro, lo primero que hago es probar un: `sudo -l` lo habitual en estos caso, luego de ello, obtengo el siguiente resultado:
 
 ```bash
 Matching Defaults entries for bananaman on Fruits:
@@ -338,21 +340,21 @@ User bananaman may run the following commands on Fruits:
     (ALL) NOPASSWD: /usr/bin/find
 ```
 
-Buscando un poco de información sobre el siguiente script: `(ALL) NOPASSWD: /usr/bin/find`  logro obtener una elevación de privilegio, pero, ¿por que? Pues veamos que nos dice nuestro amigo ChatGPT.
+Buscando un poco de información sobre el siguiente script: `(ALL) NOPASSWD: /usr/bin/find`  logro obtener información de como se puede elevar privilegios, pero, ¿por que sucede eso? Pues veamos que nos dice nuestro amigo ChatGPT.
 
 [!NOTE] Importante
   - `(ALL) NOPASSWD: /usr/bin/find`: Aquí se indica que el usuario `bananaman` puede ejecutar el comando `find` con `sudo` en cualquier ubicación (`ALL`) sin tener que ingresar su contraseña (`NOPASSWD`). El comando `find` se utiliza para buscar archivos y directorios en el sistema de archivos.
 
-Ya conociendo esta información, encuentro buscando un poco en la red que si coloco el siguiente comando, puedo elevar privilegios:
+Ya conociendo esta información, es cuestión de buscar sobre este script en internet y rapidamente aparece un comando, que al colocarlo permite conectarse como root, el comando es el siguiente:
 
 `sudo find /etc/passwd -exec /bin/sh \;`
 
 # PWNED
 
-Y efectivamente es lo que hago:
+Y efectivamente es lo que hago, así que...
 **¡Estamos dentro!**
 
-![[ElevarPrivilegiosFruitsCTF.png]]
+![ElevarPrivilegiosFruitsCTF.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/ElevarPrivilegiosFruitsCTF.png)
 
 # Bandera(s)
 
