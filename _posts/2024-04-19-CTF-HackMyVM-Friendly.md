@@ -12,15 +12,14 @@ tags:
   - plataforma: [HackMyVM]
   - dificultad: Fácil
   - autor: [RiJaba1]
----
 
 # Datos
 
 [!INFO] Friendly
   -  Máquina Friendly, creada por [[RiJaba1]] para la plataforma [[HackMyVM]] siendo la primera maquina virtual de la saga Friendly para principiantes, con sistema operativo Linux y fecha de lanzamiento: 24 de marzo del 2024, hasta el momento 212 usuarios enviaron la flag de root y 213 la flag de user.
-  - 
+
   - **Más información:** [Machine Friendly](https://hackmyvm.eu/machines/machine.php?vm=Friendly)
-  -  
+  
   - **Descargar:** [friendly.zip](https://downloads.hackmyvm.eu/friendly.zip)
 
 
@@ -201,11 +200,11 @@ Así que me voy a buscar en GTFOBins como poder elevar privilegios con sudo usan
 
 ![SudoVimGTFOBinsFriendly.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/SudoVimGTFOBinsFriendly.png)
 
-Ejecuto el primer comando `sudo vim -c ':!/bin/sh'` y con eso logro obtener el acceso de root, para este si tengo que realizar un tratamiento de la tty, y ya con este acceso como root, me pensaba que tenia la maquina lista, que solo era hacer un `cat` a la carpeta home de root y consultar la flag `root.txt`pero no fue así, resulta que Ribaja1, quiso ponerla un poco más difícil y coloco la flag en otro lado.
+Ejecuto el primer comando `sudo vim -c ':!/bin/sh'` y con eso logro obtener el acceso de root, para este si tengo que realizar un tratamiento de la tty, y ya con este acceso como root, me pensaba que tenia la maquina lista, que solo era hacer un `cat` a la carpeta home de root y consultar la flag `root.txt` pero no fue así, resulta que Ribaja1, quiso ponerla un poco más difícil y coloco la flag en otro lado.
 
 ![CTFROOTFriendly.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/CTFROOTFriendly.png)
 
-Aunque también dio la solución, indica en su pista, que se debe usar `find`para encontrar la flags y cuando hago eso, obtengo la siguiente ruta: `/var/log/apache2/root.txt` que al consultar este archivo, obtengo la flags de root y con eso queda culminada la maquina.
+Aunque también dio la solución, indica en su pista, que se debe usar `find` para encontrar la flags y cuando hago eso, obtengo la siguiente ruta: `/var/log/apache2/root.txt` que al consultar este archivo, obtengo la flags de root y con eso queda culminada la maquina.
 
 # Bandera(s)
 
