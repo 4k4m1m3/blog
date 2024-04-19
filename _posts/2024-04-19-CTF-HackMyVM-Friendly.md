@@ -16,7 +16,7 @@ tags:
 # Datos
 
 [!INFO] Friendly
-  -  Máquina Friendly, creada por [[RiJaba1]] para la plataforma [[HackMyVM]] siendo la primera maquina virtual de la saga Friendly para principiantes, con sistema operativo Linux y fecha de lanzamiento: 24 de marzo del 2024, hasta el momento 212 usuarios enviaron la flag de root y 213 la flag de user.
+  -  Máquina Friendly, creada por [[RiJaba1]] para la plataforma [[HackMyVM]] siendo la primera maquina virtual de la saga Friendly para principiantes, con sistema operativo Linux y fecha de lanzamiento: 24 de marzo del 2023, hasta el momento 212 usuarios enviaron la flag de root y 213 la flag de user.
 
   - **Más información:** [Machine Friendly](https://hackmyvm.eu/machines/machine.php?vm=Friendly)
   
