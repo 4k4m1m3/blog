@@ -22,10 +22,10 @@ future: true
 
 plugins:
   - jekyll-seo-tag
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll-admin
   - jekyll-youtube
   
 owner: "4k4m1m3"
-year: "2023"
+year: "2024"
