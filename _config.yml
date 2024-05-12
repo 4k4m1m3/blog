@@ -23,9 +23,11 @@ future: true
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate-v2
-  - jekyll-sitemap
+  - jekyll-news-sitemap
   - jekyll-admin
+  - jekyll-manager
   - jekyll-youtube
+  - jekyll-email-protect
   
 owner: "4k4m1m3"
 year: "2024"
