@@ -2,7 +2,7 @@
 layout: page
 title: Objetivo
 ---
-###### _(Última actualización: 05/08/2023)_
+###### _(Última actualización: 12/04/2024)_
 
 > Soy consciente de que soy un novato en este campo, un aprendiz, un padawan, un estudiante sin certificaciones.
 
@@ -10,7 +10,7 @@ title: Objetivo
 
 > A medida que avance en mis <a href="{{ "/pages/objetivo" | prepend: site.baseurl | replace: '//', '/' }}">objetivos</a> iré actualizando este espacio para reflejar mi progreso.
 
-Comprendo que el camino hacia mi meta es largo y desafiante, pero estoy absolutamente decidido a recorrerlo. **¿Mi principal motivación?** A mi edad de 33 años, tengo 10 años de casado y el fruto de ello son dos hermosos pequeños que iluminan mi vida. Mi hijo, de 8 años, ya ha sido una inspiración para mí desde el momento en que llegó a este mundo. Además, estamos emocionados esperando la llegada de una princesa, cuya fecha estimada de nacimiento es entre Octubre y Noviembre de 2023.
+Comprendo que el camino hacia mi meta es largo y desafiante, pero estoy absolutamente decidido a recorrerlo. **¿Mi principal motivación?** A mi edad de 33 años, tengo 10 años de casado y el fruto de ello son dos hermosos pequeños que iluminan mi vida. Mi hijo, de 8 años, ya ha sido una inspiración para mí desde el momento en que llegó a este mundo. Además, estamos de la llegada de una pequeña princesa, que para la actualización de esta nota ya tiene 6 meses.
 
 En mi vida, he tomado dos grandes decisiones que han marcado mi rumbo. La primera fue dejar mi país de nacimiento, Venezuela, en busca de un mejor futuro para mi hijo. Y ahora, con la llegada de mi hija, he tomado esta segunda decisión de convertirme en un pentester profesional con el objetivo de brindarles a mis hijos una calidad de vida aún más elevada y segura.
 

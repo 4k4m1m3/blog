@@ -23,9 +23,6 @@ title: Comunidad
 | [HackForen](https://t.me/HackForen) | [ComunidadHackingEtico](https://www.twitch.tv/comunidadhackingetico) | [ShellDreddInformatica](https://www.youtube.com/@ShellDreddInformatica) | |
 | [Pen7esting](https://t.me/Pen7esting) | | [Anonimo501](https://www.youtube.com/@Anonimo501) | |
 | [Owasp_Top_10](https://t.me/Owasp_Top_10) | | [PrivExt](https://www.youtube.com/@PrivExt) | |
-| [ofertasempleociberseguridad](https://t.me/ofertasempleociberseguridad) | | | |
-| [aprenderpython](https://t.me/aprenderpython) | | | |
-| [canalwhoissecure](https://t.me/canalwhoissecure) | | | |
 
 
 

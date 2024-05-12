@@ -25,7 +25,6 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-news-sitemap
   - jekyll-admin
-  - jekyll-manager
   - jekyll-youtube
   - jekyll-email-protect
   

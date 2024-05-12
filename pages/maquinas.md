@@ -9,22 +9,15 @@ En este apartado estaré publicando las máquinas que he desarrollado. Como esto
 
 | Máquina | Reto | OS | Autor | Publicación | Vídeo | WriteUps |
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|
-| Meow | 
-| Fawn| 
-| Dancing | 
-| Redeemer | 
+| Próximamente... |
+
 
 * ## [CTF Comunidad Hacking Ético Español](https://ctf.comunidadhackingetico.es/challenges)
 
 | Máquina | Reto | OS | Autor | Publicación | Vídeo | WriteUps |
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|
 | OCLAT | 🚩 user.txt & 🚩 root.txt| Linux | Mr.Wh1t3  | [Reto1](https://4k4m1m3.github.io/blog/CTF-Reto1-OCLAT)|  |   [PDFs](https://github.com/4k4m1m3/blog/blob/main/_posts/adjuntos/pdfs/OCLAT.pdf)|            
-| PEPE THE FROG |
-| FAKE NEWS | 
-| CRYPTOCORP |
-| DEATH NOTE | 
-| SERVER-ST |
-| 3S4lt0 |
+
 
 * ## [Delicious Hack](https://delicioushack.com/maquinas-ctf)
 

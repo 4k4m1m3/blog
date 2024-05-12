@@ -6,7 +6,7 @@ title: Ruta
 
 En este apartado estaré publicando los enlaces a publicaciones, vídeos, audios, páginas, etc, y en orden recomendado a seguir, según proceso paso a paso que realice para cumplir él [objetivo](objetivo) planteado.
 
-### Mi ruta paso a pas
+### Mi ruta paso a paso
 
 - [Unirme a una comunidad](../pages/comunidad)
 - Seguir a un Maestro Jedi, 
