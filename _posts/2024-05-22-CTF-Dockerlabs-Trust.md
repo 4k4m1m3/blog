@@ -113,7 +113,7 @@ Así que procedo ir a la web [GTFOBins](https://gtfobins.github.io/) para ver co
 
 # Comandos
 
-> [!IMPORTANT] Resumen de comandos utilizados
+[!IMPORTANT] Resumen de comandos utilizados
 > `sudo bash auto_deploy.sh trust.tar`
 > `nmap 172.17.0.2`
 > `dirbuster`
