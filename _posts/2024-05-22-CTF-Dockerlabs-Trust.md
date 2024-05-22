@@ -21,7 +21,6 @@ tags:
 >  **Dificultad:** Muy fácil
 >  **Enlace:** [Dockerlabs](https://dockerlabs.es/)
 
-
 [!TODO] Objetivo
 > 🚩Ingresar a la maquina como algún usuario.
 > 🚩Elevar privilegios una vez obtenido el acceso.

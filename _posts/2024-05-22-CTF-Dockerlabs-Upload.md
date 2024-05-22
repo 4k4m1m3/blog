@@ -16,11 +16,10 @@ tags:
 # Datos
 
 [!INFO] Upload
->  **Nombre:** Trust
+>  **Nombre:** Upload
 >  **SO:** Linux
 >  **Dificultad:** Muy fácil
 >  **Enlace:** [Dockerlabs](https://dockerlabs.es/)
-
 
 [!TODO] Objetivo
 > 🚩Ingresar a la maquina como algún usuario.
