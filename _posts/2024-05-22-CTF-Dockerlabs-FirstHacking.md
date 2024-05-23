@@ -16,14 +16,14 @@ tags:
 # Datos
 
 [!INFO] FirstHacking
->  **Nombre:** FirstHacking
->  **SO:** Linux
->  **Dificultad:** Muy fácil
->  **Enlace:** [Dockerlabs](https://dockerlabs.es/)
+  -  **Nombre:** FirstHacking
+  -  **SO:** Linux
+  -  **Dificultad:** Muy fácil
+  - **Enlace:** [Dockerlabs](https://dockerlabs.es/)
 
 [!TODO] Objetivo
-> 🚩Ingresar a la maquina como algún usuario.
-> 🚩Elevar privilegios una vez obtenido el acceso.
+  - 🚩Ingresar a la maquina como algún usuario.
+  - 🚩Elevar privilegios una vez obtenido el acceso.
 
 El primer paso consiste en iniciar la máquina, lo cual es tan sencillo como ejecutar el siguiente comando después de haber descargado la maquina:
 
@@ -33,7 +33,7 @@ El primer paso consiste en iniciar la máquina, lo cual es tan sencillo como eje
 
 # Reconocimiento
 
-> Una vez iniciada la maquina, el mismo script de inicio me da la dirección IP a lo cual procedo a realizar un escaneo de puertos de la maquina y el resultado es el siguiente:
+  - Una vez iniciada la maquina, el mismo script de inicio me da la dirección IP a lo cual procedo a realizar un escaneo de puertos de la maquina y el resultado es el siguiente:
 
 ```bash
 └─# nmap 172.17.0.2
@@ -110,15 +110,15 @@ Procedo con ello y listo, de todas las maquinas esta fue la más fácil ya que t
 
 # pwned
 
-![FirstHackingPWNED.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/
+![FirstHackingPWNED.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/FirstHackingPWNED.png)
 
 # Comandos
 
 [!IMPORTANT] Resumen de comandos utilizados
-> `sudo bash auto_deploy.sh vacaciones.tar`
-> `nmap 172.17.0.2`
-> `ftp 172.17.0.2`
-> `python 49757.py 172.17.0.2`
+  - `sudo bash auto_deploy.sh vacaciones.tar`
+  - `nmap 172.17.0.2`
+  - `ftp 172.17.0.2`
+  - `python 49757.py 172.17.0.2`
 
 
 ```

@@ -16,14 +16,14 @@ tags:
 # Datos
 
 [!INFO] Trust
->  **Nombre:** Trust
->  **SO:** Linux
->  **Dificultad:** Muy fácil
->  **Enlace:** [Dockerlabs](https://dockerlabs.es/)
+  -  **Nombre:** Trust
+  -  **SO:** Linux
+  -  **Dificultad:** Muy fácil
+  -  **Enlace:** [Dockerlabs](https://dockerlabs.es/)
 
 [!TODO] Objetivo
-> 🚩Ingresar a la maquina como algún usuario.
-> 🚩Elevar privilegios una vez obtenido el acceso.
+  - 🚩Ingresar a la maquina como algún usuario.
+  - 🚩Elevar privilegios una vez obtenido el acceso.
 
 El primer paso consiste en iniciar la máquina, lo cual es tan sencillo como ejecutar el siguiente comando después de haber descargado la maquina:
 
@@ -31,7 +31,7 @@ El primer paso consiste en iniciar la máquina, lo cual es tan sencillo como eje
 
 # Reconocimiento
 
-> Una vez iniciada la maquina, el mismo script de inicio me da la dirección IP a lo cual procedo a realizar un escaneo de puertos de la maquina y el resultado es el siguiente:
+  - Una vez iniciada la maquina, el mismo script de inicio me da la dirección IP a lo cual procedo a realizar un escaneo de puertos de la maquina y el resultado es el siguiente:
 
 
 ```bash
@@ -52,7 +52,7 @@ Al darme cuenta que existe el `puerto 80` abierto, procedo a visitar desde el na
 
 # Fuzzing Web
 
-> El siguiente paso que procedo a realizar es un fuzzing web puesto que tengo un servidor web corriendo en la maquina, así que utilizo `dirbuster` y el resultado es el siguiente:
+  - El siguiente paso que procedo a realizar es un fuzzing web puesto que tengo un servidor web corriendo en la maquina, así que utilizo `dirbuster` y el resultado es el siguiente:
 
 ```bash
 └─# dirbuster 
@@ -74,7 +74,7 @@ En su código fuente de la pagina, no me muestra nada interesante, pero recordan
 
 # Fuerza bruta SSH
 
-> Ya que la web no nos da mucha información, pero si proporciona un posible usuario, procedo a utilizar `hydra` para hacer un ataque de fuerza bruta de la siguiente manera:
+  - Ya que la web no nos da mucha información, pero si proporciona un posible usuario, procedo a utilizar `hydra` para hacer un ataque de fuerza bruta de la siguiente manera:
 
 
 ```bash
@@ -92,7 +92,7 @@ Y listo, con esto ya logro acceder por `ssh`, con el usuario `mario` y la contra
 
 # Escalada de privilegios
 
-> Ahora que tengo acceso con el usuario `mario` procedo a escalar privilegio y para ello coloco primeramente: `sudo -l` lo que me da como resultado:
+  - Ahora que tengo acceso con el usuario `mario` procedo a escalar privilegio y para ello coloco primeramente: `sudo -l` lo que me da como resultado:
 
 ```bash
 ~$ sudo -l
@@ -113,12 +113,12 @@ Así que procedo ir a la web [GTFOBins](https://gtfobins.github.io/) para ver co
 # Comandos
 
 [!IMPORTANT] Resumen de comandos utilizados
-> `sudo bash auto_deploy.sh trust.tar`
-> `nmap 172.17.0.2`
-> `dirbuster`
-> `hydra -l mario -P /usr/share/wordlists/rockyou.txt 172.17.0.2 ssh`
-> `ssh mario@172.17.0.2`
-> `sudo vim -c ':!/bin/sh'`
+  - `sudo bash auto_deploy.sh trust.tar`
+  - `nmap 172.17.0.2`
+  - `dirbuster`
+  - `hydra -l mario -P /usr/share/wordlists/rockyou.txt 172.17.0.2 ssh`
+  - `ssh mario@172.17.0.2`
+  - `sudo vim -c ':!/bin/sh'`
 
 
 ```

@@ -16,14 +16,14 @@ tags:
 # Datos
 
 [!INFO] Vacaciones
->  **Nombre:** Vacaciones
->  **SO:** Linux
->  **Dificultad:** Muy fácil
->  **Enlace:** [Dockerlabs](https://dockerlabs.es/)
+  -  **Nombre:** Vacaciones
+  -  **SO:** Linux
+  -  **Dificultad:** Muy fácil
+  -  **Enlace:** [Dockerlabs](https://dockerlabs.es/)
 
 [!TODO] Objetivo
-> 🚩Ingresar a la maquina como algún usuario.
-> 🚩Elevar privilegios una vez obtenido el acceso.
+  - 🚩Ingresar a la maquina como algún usuario.
+  - 🚩Elevar privilegios una vez obtenido el acceso.
 
 El primer paso consiste en iniciar la máquina, lo cual es tan sencillo como ejecutar el siguiente comando después de haber descargado la maquina:
 
@@ -33,7 +33,7 @@ El primer paso consiste en iniciar la máquina, lo cual es tan sencillo como eje
 
 # Reconocimiento
 
-> Una vez iniciada la maquina, el mismo script de inicio me da la dirección IP a lo cual procedo a realizar un escaneo de puertos de la maquina y el resultado es el siguiente:
+  - Una vez iniciada la maquina, el mismo script de inicio me da la dirección IP a lo cual procedo a realizar un escaneo de puertos de la maquina y el resultado es el siguiente:
 
 ```bash
 └─# nmap 172.17.0.2
@@ -57,9 +57,9 @@ De este mensaje se pueden sacar la siguiente información, existen dos posibles 
 
 # Fuerza bruta SSH
 
-> Ya que el código fuente, me proporciona 2 usuarios procedo a utilizar `hydra` para hacer un ataque de fuerza bruta, creo un archivo llamado `users.txt` en donde colocare los posibles usuarios.
+  - Ya que el código fuente, me proporciona 2 usuarios procedo a utilizar `hydra` para hacer un ataque de fuerza bruta, creo un archivo llamado `users.txt` en donde colocare los posibles usuarios.
 
->> ![CatUserVacaciones.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/CatUserVacaciones.png)
+  -  - ![CatUserVacaciones.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/CatUserVacaciones.png)
 
 Y listo, luego de pasar bastante rato, al final logro encontrar la contraseña para el usuario `camilo` con esto he logrado acceder por `ssh`, con el usuario `camilo` y la contraseña encontrada.
 
@@ -67,7 +67,7 @@ Y listo, luego de pasar bastante rato, al final logro encontrar la contraseña p
 
 # Acceso por SSH
 
-> Ahora que tengo acceso con el usuario `camilo`, lo primero que hago para elevar privilegios es colocar: `sudo -l` y resuelta que este usuario no puede ejecutar `sudo`, también intento con el comando `compgen -u` ver si existen otros usuarios, pero e indica que `compgen: not found`, así que ingreso al directorio `/home` y allí veo que existen los directorios: `camilo juan pedro`
+  - Ahora que tengo acceso con el usuario `camilo`, lo primero que hago para elevar privilegios es colocar: `sudo -l` y resuelta que este usuario no puede ejecutar `sudo`, también intento con el comando `compgen -u` ver si existen otros usuarios, pero e indica que `compgen: not found`, así que ingreso al directorio `/home` y allí veo que existen los directorios: `camilo juan pedro`
 
 Al ver que existe el directorio `/home/juan`, recordé que el código fuente menciona que `juan` le ha dejado un correo a `camilo` así que de inmediato visito el directorio: `/var/mail` y allí estaba el directorio `camilo` con un archivo de texto llamado: `correo.txt` que contiene la clave de SSH para el usuario `juan`
 
@@ -84,11 +84,11 @@ Ya estando conectado a la cuenta de usuario de `juan` luego de pivotear desde el
 # Comandos
 
 [!IMPORTANT] Resumen de comandos utilizados
-> `sudo bash auto_deploy.sh vacaciones.tar`
-> `nmap 172.17.0.2`
-> `cd /var/mail/camilo`
-> `sudo -l`
-> `sudo ruby -e 'exec "/bin/sh"'`
+  - `sudo bash auto_deploy.sh vacaciones.tar`
+  - `nmap 172.17.0.2`
+  - `cd /var/mail/camilo`
+  - `sudo -l`
+  - `sudo ruby -e 'exec "/bin/sh"'`
 
 
 ```

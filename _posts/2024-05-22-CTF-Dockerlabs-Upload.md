@@ -16,14 +16,14 @@ tags:
 # Datos
 
 [!INFO] Upload
->  **Nombre:** Upload
->  **SO:** Linux
->  **Dificultad:** Muy fácil
->  **Enlace:** [Dockerlabs](https://dockerlabs.es/)
+  -  **Nombre:** Upload
+  -  **SO:** Linux
+  -  **Dificultad:** Muy fácil
+  -  **Enlace:** [Dockerlabs](https://dockerlabs.es/)
 
 [!TODO] Objetivo
-> 🚩Ingresar a la maquina como algún usuario.
-> 🚩Elevar privilegios una vez obtenido el acceso.
+  - 🚩Ingresar a la maquina como algún usuario.
+  - 🚩Elevar privilegios una vez obtenido el acceso.
 
 El primer paso consiste en iniciar la máquina, lo cual es tan sencillo como ejecutar el siguiente comando después de haber descargado la maquina:
 
@@ -33,7 +33,7 @@ El primer paso consiste en iniciar la máquina, lo cual es tan sencillo como eje
 
 # Reconocimiento
 
-> Una vez iniciada la maquina, el mismo script de inicio me da la dirección IP a lo cual procedo a realizar un escaneo de puertos de la maquina y el resultado es el siguiente:
+  - Una vez iniciada la maquina, el mismo script de inicio me da la dirección IP a lo cual procedo a realizar un escaneo de puertos de la maquina y el resultado es el siguiente:
 
 ```bash
 └─# nmap 172.17.0.2
@@ -52,12 +52,12 @@ Al darme cuenta que existe el `puerto 80` abierto, procedo a visitar desde el na
 
 # Upload file
 
-> Una de las primeras cosas que observo es que no existe un filtrado de la extensión del archivo a cargar, así que por lógica permite cargar cualquier archivo sin importar la extensión, podría subir por ejemplo el `pentestmonkey` en php y abrirlo desde el navegador para obtener una reverse shell.
->> 
->> #pentestmonkey
->> Esta herramienta es útil durante pruebas de seguridad en las que tienes acceso para subir archivos a un servidor web con PHP. Subes el script a la raíz del sitio web y luego lo ejecutas desde tu navegador. El script crea una conexión desde el servidor web hacia una dirección y puerto que elijas, permitiéndote controlar el servidor a través de una terminal.
-> 
-> Así que procedo a modificar y subir un archivo php de pentestmonkey, sin embargo necesito ahora conocer el directorio donde se suben estos archivos, para ello uso `dirbuster` y continuando con el nombre de la maquina, el directorio se llama: `uploads`
+  - Una de las primeras cosas que observo es que no existe un filtrado de la extensión del archivo a cargar, así que por lógica permite cargar cualquier archivo sin importar la extensión, podría subir por ejemplo el `pentestmonkey` en php y abrirlo desde el navegador para obtener una reverse shell.
+  -  - 
+  -  - #pentestmonkey
+  -  - Esta herramienta es útil durante pruebas de seguridad en las que tienes acceso para subir archivos a un servidor web con PHP. Subes el script a la raíz del sitio web y luego lo ejecutas desde tu navegador. El script crea una conexión desde el servidor web hacia una dirección y puerto que elijas, permitiéndote controlar el servidor a través de una terminal.
+  - 
+  - Así que procedo a modificar y subir un archivo php de pentestmonkey, sin embargo necesito ahora conocer el directorio donde se suben estos archivos, para ello uso `dirbuster` y continuando con el nombre de la maquina, el directorio se llama: `uploads`
 
 Así que ingresando desde al navegador a la dirección: `http://172.17.0.2/uploads/pentestmonkey.php` logro obtener una reverse shell, sin olvidar que tengo que ponerme a la escucha con netcat y el comando: `nc -lnvp 4444`
 
@@ -71,7 +71,7 @@ Para conocer los usuarios que se encuentran en el sistema utilizo: `compgen -u` 
 
 # Escalada de privilegios
 
-> Ahora que tengo acceso con el usuario `www-data` y verificando que no existe otro usuario en el sistema para pivotear, procedo a escalar privilegios y para ello coloco primeramente: `sudo -l` lo que me da como resultado:
+  - Ahora que tengo acceso con el usuario `www-data` y verificando que no existe otro usuario en el sistema para pivotear, procedo a escalar privilegios y para ello coloco primeramente: `sudo -l` lo que me da como resultado:
 
 ```bash
 www-data@8792622e94b1:/$ sudo -l
@@ -90,11 +90,11 @@ Así que procedo ir a la web [GTFOBins](https://gtfobins.github.io/) para ver co
 # Comandos
 
 [!IMPORTANT] Resumen de comandos utilizados
-> `sudo bash auto_deploy.sh upload.tar`
-> `nmap 172.17.0.2`
-> `dirbuster`
-> `nc -lnvp 4444`
-> `sudo vim -c ':!/bin/sh'`
+  - `sudo bash auto_deploy.sh upload.tar`
+  - `nmap 172.17.0.2`
+  - `dirbuster`
+  - `nc -lnvp 4444`
+  - `sudo vim -c ':!/bin/sh'`
 
 
 ```
