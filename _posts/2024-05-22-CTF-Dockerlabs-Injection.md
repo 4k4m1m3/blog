@@ -142,6 +142,7 @@ Me voy para nuestra plataforma favorita [GTFOBins](https://gtfobins.github.io/) 
 - **/usr/bin/chsh:** No binary matches...
 - **/usr/bin/su:** Sudo
 - **/usr/bin/env:** Shell - SUID - Sudo
+
 # Escalada de privilegios
 
 Y allí encontramos, con mucha paciencia el script vulnerable `/usr/bin/env` a `SUID`, así que según el sitio [GTFOBins] si coloco:
